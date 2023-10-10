@@ -8,9 +8,10 @@
           {% load static %}
 
     <link rel="stylesheet" href="{% static 'onlineshop/nicepage.css' %}" media="screen">
-<link rel="stylesheet" href="{% static 'onlineshop/add_bottle.css' %}" media="screen">
+     <link rel="stylesheet" href="{% static 'onlineshop/add_bottle.css' %}" media="screen">
     <script class="u-script" type="text/javascript" src="{% static 'onlineshop/jquery.js' %}" defer=""></script>
     <script class="u-script" type="text/javascript" src="{% static 'onlineshop/nicepage.js' %}" defer=""></script>
+
     <meta name="generator" content="Nicepage 5.17.1, nicepage.com">
     <meta name="referrer" content="origin">
     <link id="u-theme-google-font" rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i|Open+Sans:300,300i,400,400i,500,500i,600,600i,700,700i,800,800i">
@@ -28,8 +29,9 @@
     <meta property="og:title" content="add_bottle">
     <meta property="og:type" content="website">
   <meta data-intl-tel-input-cdn-path="intlTelInput/"></head>
-  <body class="u-body u-xl-mode" data-lang="ru"><header class="u-clearfix u-header u-header" id="sec-cede"><div class="u-clearfix u-sheet u-valign-middle-lg u-valign-middle-md u-valign-middle-sm u-valign-middle-xs u-sheet-1">
-        <a href="https://nicepage.com" class="u-image u-logo u-image-1" data-image-width="1280" data-image-height="1280">
+  <body class="u-body u-xl-mode" data-lang="ru">
+  <header class="u-clearfix u-header u-header" id="sec-cede"><div class="u-clearfix u-sheet u-valign-middle-lg u-valign-middle-md u-valign-middle-sm u-valign-middle-xs u-sheet-1">
+        <a href="{% url 'onlineshop:main_page' %}" class="u-image u-logo u-image-1" data-image-width="1280" data-image-height="1280">
           <img src="{% static 'onlineshop/images/gc34476ab4f72df5338bfe340243fc055995f0934459df7878a4cb09ef2c7a18ff81c09c4b55b521ba4bfed0304db55a9_1280.png' %}" class="u-logo-image u-logo-image-1">
         </a>
         <h5 class="u-custom-font u-font-source-sans-pro u-text u-text-1">Meta Plastik</h5>
@@ -42,7 +44,7 @@
             </a>
           </div>
           <div class="u-custom-menu u-nav-container">
-            <ul class="u-nav u-unstyled"><li class="u-nav-item"><a class="u-button-style u-nav-link" href="main.html">ANASAYFA</a>
+            <ul class="u-nav u-unstyled"><li class="u-nav-item"><a class="u-button-style u-nav-link" href="{% url 'onlineshop:main_page' %}">ANASAYFA</a>
 </li><li class="u-nav-item"><a class="u-button-style u-nav-link" href="Products.html">ÜRÜNLER</a>
 </li><li class="u-nav-item"><a class="u-button-style u-nav-link" href="#">HAKKIMIZDA</a>
 </li><li class="u-nav-item"><a class="u-button-style u-nav-link" href="contacts.html">İLETİŞİM</a>
@@ -63,9 +65,13 @@
           </div>
         </nav>
       </div></header>
-    <section class="u-align-center u-clearfix u-grey-5 u-section-1" id="sec-0f9d">
+
+
+  <section class="u-align-center u-clearfix u-grey-5 u-section-1" id="sec-0f9d">
       <div class="u-clearfix u-sheet u-valign-middle u-sheet-1">
+
         <h1 class="u-text u-text-default u-text-1">Yeni Urun</h1>
+
         <div class="u-form u-form-1">
           <form action="{% url 'onlineshop:create_bottle' %}"  style="padding: 10px"  name="form" method="post">
                           {% csrf_token %}
@@ -74,91 +80,111 @@
               <label for="name-3b9a" class="u-label">Ürün kodu</label>
               <input type="text" placeholder="Bottle Code" id="name-3b9a" name="bottle_code" class="u-border-2 u-border-black u-border-no-left u-border-no-right u-border-no-top u-input u-input-rectangle u-input-1" required="">
             </div>
+             <br>
             <div class="u-form-group u-form-select u-label-top u-form-group-2">
               <label for="select-ec83" class="u-label">Ürün tipi</label>
               <div class="u-form-select-wrapper">
                 <select id="select-ec83" name="main_type" class="u-border-2 u-border-black u-border-no-left u-border-no-right u-border-no-top u-input u-input-rectangle u-input-2">
                   <option value="Plastik" data-calc="Plastik">PET/PE/PP ürünler</option>
                   <option value="glass" data-calc="glass">CAM ürünler</option>
-                  <option value="big" data-calc="big">KAVANOZ/BIDON/KOVA/BEHER</option>
-                  <option data-calc="aksesuar" value="AKSESUARLAR">AKSESUARLAR</option>
+                  <option value="containers" data-calc="containers">KAVANOZ/BIDON/KOVA/BEHER</option>
+                  <option data-calc="aksesuar" value="aksesuar">AKSESUARLAR</option>
                 </select>
                 <svg class="u-caret u-caret-svg" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="16px" height="16px" viewBox="0 0 16 16" style="fill:currentColor;" xml:space="preserve"><polygon class="st0" points="8,12 2,4 14,4 "></polygon></svg>
               </div>
             </div>
-            <div class="u-form-group u-form-select u-label-top u-form-group-3">
-              <label for="select-37c8" class="u-label">Urun tipi 2</label>
+            <br>
+            <div class="u-form-group u-form-select u-label-top u-form-group-3" data-dependency="[{&quot;action&quot;:&quot;show&quot;,&quot;field&quot;:&quot;main_type&quot;,&quot;condition&quot;:&quot;equal&quot;,&quot;value&quot;:&quot;Plastik&quot;}]">
+              <label for="select-37c8" class="u-label">Urun tipi PET</label>
               <div class="u-form-select-wrapper">
                 <select id="select-37c8" name="sub_type1" class="u-border-2 u-border-black u-border-no-left u-border-no-right u-border-no-top u-input u-input-rectangle u-input-3">
                   <option value="Pet Siseler" data-calc="Pet Siseler">Pet Siseler</option>
                   <option value="Politilen SIseler" data-calc="">Politilen SIseler</option>
-                  <option value="Item 3">Item 3</option>
+                  <option value="Item 3" data-calc="">Item 3</option>
                 </select>
                 <svg class="u-caret u-caret-svg" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="16px" height="16px" viewBox="0 0 16 16" style="fill:currentColor;" xml:space="preserve"><polygon class="st0" points="8,12 2,4 14,4 "></polygon></svg>
               </div>
             </div>
-            <div class="u-form-group u-form-select u-label-top u-form-group-4">
+
+
+              <div class="u-form-group u-form-select u-label-top u-form-group-4" data-dependency="[{&quot;action&quot;:&quot;show&quot;,&quot;field&quot;:&quot;main_type&quot;,&quot;condition&quot;:&quot;equal&quot;,&quot;value&quot;:&quot;glass&quot;}]">
               <label for="select-9a46" class="u-label">Urun tipi Cam</label>
               <div class="u-form-select-wrapper">
                 <select id="select-9a46" name="sub_type2" class="u-border-2 u-border-black u-border-no-left u-border-no-right u-border-no-top u-input u-input-rectangle u-input-4">
                   <option value="Dropper Siseler" data-calc="">Dropper Siseler</option>
                   <option value="Tablet Siseler" data-calc="">Tablet Siseler</option>
-                  <option value="Item 3">Item 3</option>
+                  <option value="Item 3" data-calc="">Item 3</option>
                 </select>
                 <svg class="u-caret u-caret-svg" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="16px" height="16px" viewBox="0 0 16 16" style="fill:currentColor;" xml:space="preserve"><polygon class="st0" points="8,12 2,4 14,4 "></polygon></svg>
               </div>
             </div>
-            <div class="u-form-group u-form-select u-label-top u-form-group-5">
+
+              <div class="u-form-group u-form-select u-label-top u-form-group-5" data-dependency="[{&quot;action&quot;:&quot;show&quot;,&quot;field&quot;:&quot;main_type&quot;,&quot;condition&quot;:&quot;equal&quot;,&quot;value&quot;:&quot;containers&quot;}]">
               <label for="select-9d06" class="u-label">Urun tipi Kavanoz</label>
               <div class="u-form-select-wrapper">
                 <select id="select-9d06" name="sub_type3" class="u-border-2 u-border-black u-border-no-left u-border-no-right u-border-no-top u-input u-input-rectangle u-input-5">
                   <option value="PET Kavanoz" data-calc="">PET Kavanoz</option>
                   <option value="Pomat Kutulari" data-calc="">Pomat Kutulari</option>
-                  <option value="Item 3">Item 3</option>
+                  <option value="Item 3" data-calc="">Item 3</option>
                 </select>
                 <svg class="u-caret u-caret-svg" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="16px" height="16px" viewBox="0 0 16 16" style="fill:currentColor;" xml:space="preserve"><polygon class="st0" points="8,12 2,4 14,4 "></polygon></svg>
               </div>
             </div>
-            <div class="u-form-group u-form-select u-label-top u-form-group-6">
+
+              <div class="u-form-group u-form-select u-label-top u-form-group-6" data-dependency="[{&quot;action&quot;:&quot;show&quot;,&quot;field&quot;:&quot;main_type&quot;,&quot;condition&quot;:&quot;equal&quot;,&quot;value&quot;:&quot;aksesuar&quot;}]">
               <label for="select-d224" class="u-label">Urun tipi Aksesuar</label>
               <div class="u-form-select-wrapper">
                 <select id="select-d224" name="sub_type4" class="u-border-2 u-border-black u-border-no-left u-border-no-right u-border-no-top u-input u-input-rectangle u-input-6">
                   <option value="Contalar" data-calc="">Contalar</option>
-                  <option value="Item 2">Item 2</option>
-                  <option value="Item 3">Item 3</option>
+                  <option value="Item 2" data-calc="">Item 2</option>
+                  <option value="Item 3" data-calc="">Item 3</option>
                 </select>
                 <svg class="u-caret u-caret-svg" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="16px" height="16px" viewBox="0 0 16 16" style="fill:currentColor;" xml:space="preserve"><polygon class="st0" points="8,12 2,4 14,4 "></polygon></svg>
               </div>
             </div>
-            <div class="u-form-group u-form-number u-form-number-layout-number u-label-top u-form-group-7">
+               <br>
+              <div class="u-form-group u-form-number u-form-number-layout-number u-label-top u-form-group-7">
               <label for="number-0d6a" class="u-label">Ağırlık</label>
               <div class="u-input-row" data-value="0">
-                <input value="0" min="0" max="100" step="1" type="number" placeholder="" id="number-0d6a" name="weigth" class="u-border-2 u-border-black u-border-no-left u-border-no-right u-border-no-top u-input u-input-rectangle u-text-black u-input-7">
+                <input value="" min="0" max="100" step="1" type="number" placeholder="" id="number-0d6a" name="weigth" class="u-border-2 u-border-black u-border-no-left u-border-no-right u-border-no-top u-input u-input-rectangle u-text-black u-input-7">
               </div>
             </div>
-            <div class="u-form-group u-form-number u-form-number-layout-number u-label-top u-form-group-8">
+              <br>
+              <div class="u-form-group u-form-number u-form-number-layout-number u-label-top u-form-group-8">
               <label for="number-cf5d" class="u-label">Genişlik</label>
               <div class="u-input-row" data-value="0">
-                <input value="0" min="0" max="100" step="1" type="number" placeholder="" id="number-cf5d" name="width" class="u-border-2 u-border-black u-border-no-left u-border-no-right u-border-no-top u-input u-input-rectangle u-text-black u-input-8">
+                <input value="" min="0" max="100" step="1" type="number" placeholder="" id="number-cf5d" name="width" class="u-border-2 u-border-black u-border-no-left u-border-no-right u-border-no-top u-input u-input-rectangle u-text-black u-input-8">
               </div>
             </div>
-            <div class="u-form-group u-form-number u-form-number-layout-number u-label-top u-form-group-9">
+               <br>
+              <div class="u-form-group u-form-number u-form-number-layout-number u-label-top u-form-group-9">
               <label for="number-9237" class="u-label">Yükseklik</label>
               <div class="u-input-row" data-value="0">
-                <input value="0" min="0" max="100" step="1" type="number" placeholder="" id="number-9237" name="height" class="u-border-2 u-border-black u-border-no-left u-border-no-right u-border-no-top u-input u-input-rectangle u-text-black u-input-9">
+                <input value="" min="0" max="100" step="1" type="number" placeholder="" id="number-9237" name="height" class="u-border-2 u-border-black u-border-no-left u-border-no-right u-border-no-top u-input u-input-rectangle u-text-black u-input-9">
               </div>
             </div>
-            <div class="u-form-group u-form-number u-form-number-layout-number u-label-top u-form-group-10">
+               <br>
+              <div class="u-form-group u-form-number u-form-number-layout-number u-label-top u-form-group-10">
               <label for="number-6a8d" class="u-label">Bogaz ölçüsü</label>
               <div class="u-input-row" data-value="0">
-                <input value="0" min="0" max="100" step="1" type="number" placeholder="" id="number-6a8d" name="neck_size" class="u-border-2 u-border-black u-border-no-left u-border-no-right u-border-no-top u-input u-input-rectangle u-text-black u-input-10">
+                <input value="" min="0" max="100" step="1" type="number" placeholder="" id="number-6a8d" name="neck_size" class="u-border-2 u-border-black u-border-no-left u-border-no-right u-border-no-top u-input u-input-rectangle u-text-black u-input-10">
               </div>
             </div>
-            <div class="u-align-center u-form-group u-form-submit u-label-top">
+               <br>
+              <div class="u-form-group u-form-number u-form-number-layout-number u-label-top u-form-group-10">
+              <label for="number-6a8d" class="u-label">Hacim</label>
+              <div class="u-input-row" data-value="0">
+                <input value="" min="0" max="100" step="1" type="number" placeholder="" id="number-6ad" name="volume" class="u-border-2 u-border-black u-border-no-left u-border-no-right u-border-no-top u-input u-input-rectangle u-text-black u-input-10">
+              </div>
+            </div>
+
+              <br>
+              <div class="u-align-center u-form-group u-form-submit u-label-top">
               <a href="#" class="u-border-2 u-border-black u-btn u-btn-rectangle u-btn-submit u-button-style u-none u-btn-1">Submit</a>
               <input type="submit" value="submit" class="u-form-control-hidden">
             </div>
-            <div class="u-form-send-message u-form-send-success"> Thank you! Your message has been sent. </div>
+
+              <div class="u-form-send-message u-form-send-success"> Thank you! Your message has been sent. </div>
             <div class="u-form-send-error u-form-send-message"> Unable to send your message. Please fix errors then try again. </div>
             <input type="hidden" value="" name="recaptchaResponse">
             <input type="hidden" name="formServices" value="cbf0d18d-5456-ae03-71f8-2d943f80830c">

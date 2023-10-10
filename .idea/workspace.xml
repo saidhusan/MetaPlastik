@@ -2,11 +2,18 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="9f0d59f7-6227-44a0-b337-697c0310657f" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/onlineshop/static/onlineshop/nicepage_products.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/onlineshop/static/onlineshop/nicepage_products.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/onlineshop/templates/onlineshop/all_products.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/onlineshop/templates/onlineshop/all_products2.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/db.sqlite3" beforeDir="false" afterPath="$PROJECT_DIR$/db.sqlite3" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/metaplastik/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/metaplastik/settings.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/onlineshop/static/onlineshop/Products.css" beforeDir="false" afterPath="$PROJECT_DIR$/onlineshop/static/onlineshop/Products.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/onlineshop/static/onlineshop/Thank-You-Page-Template.css" beforeDir="false" afterPath="$PROJECT_DIR$/onlineshop/static/onlineshop/thank_you.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/onlineshop/static/onlineshop/jquery.js" beforeDir="false" afterPath="$PROJECT_DIR$/onlineshop/static/onlineshop/jquery.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/onlineshop/templates/onlineshop/Products.html" beforeDir="false" afterPath="$PROJECT_DIR$/onlineshop/templates/onlineshop/Products.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/onlineshop/templates/onlineshop/add_bottle.html" beforeDir="false" afterPath="$PROJECT_DIR$/onlineshop/templates/onlineshop/add_bottle.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/onlineshop/templates/onlineshop/main.html" beforeDir="false" afterPath="$PROJECT_DIR$/onlineshop/templates/onlineshop/main.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/onlineshop/templates/onlineshop/thank-you-page.html" beforeDir="false" afterPath="$PROJECT_DIR$/onlineshop/templates/onlineshop/thank_you.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/onlineshop/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/onlineshop/urls.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/onlineshop/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/onlineshop/views.py" afterDir="false" />
     </list>
@@ -36,6 +43,7 @@
     <key name="CopyFile.RECENT_KEYS">
       <recent name="D:\MetaPlastic\metaplastik\onlineshop\static\onlineshop" />
       <recent name="D:\MetaPlastic\metaplastik\onlineshop\templates\onlineshop" />
+      <recent name="D:\MetaPlastic\metaplastik\onlineshop\templates" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -68,7 +76,9 @@
       <map>
         <entry key="MAIN">
           <value>
-            <State />
+            <State>
+              <option name="COLUMN_ORDER" />
+            </State>
           </value>
         </entry>
       </map>
