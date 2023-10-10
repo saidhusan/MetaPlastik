@@ -2,50 +2,13 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="9f0d59f7-6227-44a0-b337-697c0310657f" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/onlineshop/static/onlineshop/Products.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/onlineshop/static/onlineshop/Thank-You-Page-Template.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/onlineshop/static/onlineshop/add_bottle.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/onlineshop/static/onlineshop/contacts.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/onlineshop/static/onlineshop/images/11821096.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/onlineshop/static/onlineshop/images/159832-3fcc89cb.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/onlineshop/static/onlineshop/images/159832-4946e4ab.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/onlineshop/static/onlineshop/images/159832.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/onlineshop/static/onlineshop/images/2838912-019c6d4e.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/onlineshop/static/onlineshop/images/2838912.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/onlineshop/static/onlineshop/images/535239-0b49b0e2.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/onlineshop/static/onlineshop/images/535239.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/onlineshop/static/onlineshop/images/561127-793f4b82.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/onlineshop/static/onlineshop/images/561127-dd3c8a7e.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/onlineshop/static/onlineshop/images/561127.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/onlineshop/static/onlineshop/images/90fc53c9.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/onlineshop/static/onlineshop/images/953831-1a461f81.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/onlineshop/static/onlineshop/images/953831.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/onlineshop/static/onlineshop/images/Jars5.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/onlineshop/static/onlineshop/images/Jars6.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/onlineshop/static/onlineshop/images/Jasr2.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/onlineshop/static/onlineshop/images/default-image.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/onlineshop/static/onlineshop/images/gc34476ab4f72df5338bfe340243fc055995f0934459df7878a4cb09ef2c7a18ff81c09c4b55b521ba4bfed0304db55a9_1280.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/onlineshop/static/onlineshop/images/jars3.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/onlineshop/static/onlineshop/images/jars4.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/onlineshop/static/onlineshop/intlTelInput/intlTelInput.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/onlineshop/static/onlineshop/intlTelInput/intlTelInput.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/onlineshop/static/onlineshop/intlTelInput/utils.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/onlineshop/static/onlineshop/jquery.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/onlineshop/static/onlineshop/main.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/onlineshop/static/onlineshop/nicepage.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/onlineshop/static/onlineshop/nicepage.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/onlineshop/static/onlineshop/product_info.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/onlineshop/templates/onlineshop/Products.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/onlineshop/templates/onlineshop/add_bottle.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/onlineshop/templates/onlineshop/contacts.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/onlineshop/templates/onlineshop/index.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/onlineshop/templates/onlineshop/main.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/onlineshop/templates/onlineshop/product_info.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/onlineshop/templates/onlineshop/thank-you-page.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/db.sqlite3" beforeDir="false" afterPath="$PROJECT_DIR$/db.sqlite3" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/metaplastik/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/metaplastik/settings.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/onlineshop/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/onlineshop/models.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/onlineshop/templates/onlineshop/add_bottle.html" beforeDir="false" afterPath="$PROJECT_DIR$/onlineshop/templates/onlineshop/add_bottle.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/onlineshop/templates/onlineshop/main.html" beforeDir="false" afterPath="$PROJECT_DIR$/onlineshop/templates/onlineshop/main.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/onlineshop/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/onlineshop/urls.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/onlineshop/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/onlineshop/views.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />

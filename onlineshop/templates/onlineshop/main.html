@@ -5,10 +5,12 @@
     <meta name="keywords" content="Our Projects, ​Engineering, Procurement and Construction Projects Around the World, Get in touch">
     <meta name="description" content="">
     <title>main</title>
-    <link rel="stylesheet" href="nicepage.css" media="screen">
-<link rel="stylesheet" href="main.css" media="screen">
-    <script class="u-script" type="text/javascript" src="jquery.js" defer=""></script>
-    <script class="u-script" type="text/javascript" src="nicepage.js" defer=""></script>
+      {% load static %}
+
+    <link rel="stylesheet" href="{% static 'onlineshop/nicepage.css' %}" media="screen">
+<link rel="stylesheet" href="{% static 'onlineshop/main.css' %}" media="screen">
+    <script class="u-script" type="text/javascript" src="{% static 'onlineshop/jquery.js' %}" defer=""></script>
+    <script class="u-script" type="text/javascript" src="{% static 'onlineshop/nicepage.js' %}" defer=""></script>
     <meta name="generator" content="Nicepage 5.17.1, nicepage.com">
     <meta name="referrer" content="origin">
     <link id="u-theme-google-font" rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i|Open+Sans:300,300i,400,400i,500,500i,600,600i,700,700i,800,800i">
@@ -22,7 +24,7 @@
 		"@context": "http://schema.org",
 		"@type": "Organization",
 		"name": "",
-		"logo": "images/gc34476ab4f72df5338bfe340243fc055995f0934459df7878a4cb09ef2c7a18ff81c09c4b55b521ba4bfed0304db55a9_1280.png"
+		"logo": "{% static 'onlineshop/images/gc34476ab4f72df5338bfe340243fc055995f0934459df7878a4cb09ef2c7a18ff81c09c4b55b521ba4bfed0304db55a9_1280.png' %}"
 }</script>
     <meta name="theme-color" content="#1b356a">
     <meta property="og:title" content="main">
@@ -30,7 +32,7 @@
   <meta data-intl-tel-input-cdn-path="intlTelInput/"></head>
   <body class="u-body u-xl-mode" data-lang="ru"><header class="u-clearfix u-header u-header" id="sec-cede"><div class="u-clearfix u-sheet u-valign-middle-lg u-valign-middle-md u-valign-middle-sm u-valign-middle-xs u-sheet-1">
         <a href="https://nicepage.com" class="u-image u-logo u-image-1" data-image-width="1280" data-image-height="1280">
-          <img src="images/gc34476ab4f72df5338bfe340243fc055995f0934459df7878a4cb09ef2c7a18ff81c09c4b55b521ba4bfed0304db55a9_1280.png" class="u-logo-image u-logo-image-1">
+          <img src="{% static 'onlineshop/images/gc34476ab4f72df5338bfe340243fc055995f0934459df7878a4cb09ef2c7a18ff81c09c4b55b521ba4bfed0304db55a9_1280.png' %}" class="u-logo-image u-logo-image-1">
         </a>
         <h5 class="u-custom-font u-font-source-sans-pro u-text u-text-1">Meta Plastik</h5>
         <nav class="u-menu u-menu-one-level u-offcanvas u-menu-1">
@@ -75,7 +77,7 @@
           <div class="u-carousel-inner u-gallery-inner" role="listbox">
             <div class="u-active u-carousel-item u-effect-fade u-gallery-item u-carousel-item-1">
               <div class="u-back-slide" data-image-width="509" data-image-height="339">
-                <img class="u-back-image u-expanded" src="images/Jasr2.jpg">
+                <img class="u-back-image u-expanded" src="{% static 'onlineshop/images/Jasr2.jpg' %}">
               </div>
               <div class="u-align-center u-over-slide u-shading u-valign-bottom u-over-slide-1">
                 <h3 class="u-gallery-heading">Sample Title</h3>
@@ -84,7 +86,7 @@
             </div>
             <div class="u-carousel-item u-effect-fade u-gallery-item u-carousel-item-2">
               <div class="u-back-slide" data-image-width="2048" data-image-height="1405">
-                <img class="u-back-image u-expanded" src="images/jars3.jpg">
+                <img class="u-back-image u-expanded" src="{% static 'onlineshop/images/jars3.jpg' %}">
               </div>
               <div class="u-align-center u-over-slide u-shading u-valign-bottom u-over-slide-2">
                 <h3 class="u-gallery-heading">Sample Title</h3>
@@ -93,7 +95,7 @@
             </div>
             <div class="u-carousel-item u-effect-fade u-gallery-item u-carousel-item-3" data-image-width="509" data-image-height="339">
               <div class="u-back-slide" data-image-width="2048" data-image-height="1930">
-                <img class="u-back-image u-expanded u-back-image-3" src="images/Jars6.jpg">
+                <img class="u-back-image u-expanded u-back-image-3" src="{% static 'onlineshop/images/Jars6.jpg' %}">
               </div>
               <div class="u-align-center u-over-slide u-shading u-valign-bottom u-over-slide-3"></div>
               <style data-mode="XL" data-visited="true"></style>
@@ -104,7 +106,7 @@
             </div>
             <div class="u-carousel-item u-effect-fade u-gallery-item u-carousel-item-4" data-image-width="2048" data-image-height="1552">
               <div class="u-back-slide">
-                <img class="u-back-image u-expanded" src="images/Jars5.jpg">
+                <img class="u-back-image u-expanded" src="{% static 'onlineshop/images/Jars5.jpg' %}">
               </div>
               <div class="u-align-center u-over-slide u-shading u-valign-bottom u-over-slide-4"></div>
               <style data-mode="XL" data-visited="true"></style>
@@ -161,57 +163,57 @@ c6.177,6.18,9.262,14.271,9.262,22.366C354.708,234.018,351.617,242.115,345.441,24
           <div class="u-tab-content">
             <div class="u-container-style u-tab-active u-tab-pane u-white u-tab-pane-1" id="tab-0da5" role="tabpanel" aria-labelledby="link-tab-0da5">
               <div class="u-container-layout u-container-layout-1">
-                <img alt="" class="u-expanded-width-xs u-image u-image-default u-image-1" data-image-width="509" data-image-height="339" src="images/Jasr2.jpg">
+                <img alt="" class="u-expanded-width-xs u-image u-image-default u-image-1" data-image-width="509" data-image-height="339" src="{% static 'onlineshop/images/Jasr2.jpg' %}">
                 <h4 class="u-text u-text-1">PET/PE/PP URUNLER</h4>
-                <h6 class="u-custom-font u-font-source-sans-pro u-hover-feature u-text u-text-2"><span class="u-file-icon u-icon"><img src="images/11821096.png" alt=""></span>&nbsp;Polietelen SIseler
+                <h6 class="u-custom-font u-font-source-sans-pro u-hover-feature u-text u-text-2"><span class="u-file-icon u-icon"><img src="{% static 'onlineshop/images/11821096.png' %}" alt=""></span>&nbsp;Polietelen SIseler
                 </h6>
-                <h6 class="u-custom-font u-font-source-sans-pro u-hover-feature u-text u-text-3"><span class="u-file-icon u-icon"><img src="images/11821096.png" alt=""></span>&nbsp;Pet Siseler
+                <h6 class="u-custom-font u-font-source-sans-pro u-hover-feature u-text u-text-3"><span class="u-file-icon u-icon"><img src="{% static 'onlineshop/images/11821096.png' %}" alt=""></span>&nbsp;Pet Siseler
                 </h6>
-                <h6 class="u-custom-font u-font-source-sans-pro u-hover-feature u-text u-text-4"><span class="u-file-icon u-icon"><img src="images/11821096.png" alt=""></span>Tarim ve Kapakli Siseler
+                <h6 class="u-custom-font u-font-source-sans-pro u-hover-feature u-text u-text-4"><span class="u-file-icon u-icon"><img src="{% static 'onlineshop/images/11821096.png' %}" alt=""></span>Tarim ve Kapakli Siseler
                 </h6>
-                <h6 class="u-custom-font u-font-source-sans-pro u-hover-feature u-text u-text-5"><span class="u-file-icon u-icon"><img src="images/11821096.png" alt=""></span>&nbsp;Droper<br>
+                <h6 class="u-custom-font u-font-source-sans-pro u-hover-feature u-text u-text-5"><span class="u-file-icon u-icon"><img src="{% static 'onlineshop/images/11821096.png' %}" alt=""></span>&nbsp;Droper<br>
                 </h6>
               </div>
             </div>
             <div class="u-container-style u-tab-pane u-white u-tab-pane-2" id="tab-630b" role="tabpanel" aria-labelledby="link-tab-630b">
               <div class="u-container-layout u-container-layout-2">
-                <img alt="" class="u-expanded-width-xs u-image u-image-default u-image-2" data-image-width="509" data-image-height="339" src="images/Jasr2.jpg">
+                <img alt="" class="u-expanded-width-xs u-image u-image-default u-image-2" data-image-width="509" data-image-height="339" src="{% static 'onlineshop/images/Jasr2.jpg' %}">
                 <h4 class="u-text u-text-6">PET/PE/PP URUNLER</h4>
-                <h6 class="u-custom-font u-font-source-sans-pro u-hover-feature u-text u-text-7"><span class="u-file-icon u-icon"><img src="images/11821096.png" alt=""></span>&nbsp;Polietelen SIseler
+                <h6 class="u-custom-font u-font-source-sans-pro u-hover-feature u-text u-text-7"><span class="u-file-icon u-icon"><img src="{% static 'onlineshop/images/11821096.png' %}" alt=""></span>&nbsp;Polietelen SIseler
                 </h6>
-                <h6 class="u-custom-font u-font-source-sans-pro u-hover-feature u-text u-text-8"><span class="u-file-icon u-icon"><img src="images/11821096.png" alt=""></span>&nbsp;Pet Siseler
+                <h6 class="u-custom-font u-font-source-sans-pro u-hover-feature u-text u-text-8"><span class="u-file-icon u-icon"><img src="{% static 'onlineshop/images/11821096.png' %}" alt=""></span>&nbsp;Pet Siseler
                 </h6>
-                <h6 class="u-custom-font u-font-source-sans-pro u-hover-feature u-text u-text-9"><span class="u-file-icon u-icon"><img src="images/11821096.png" alt=""></span>Tarim ve Kapakli Siseler
+                <h6 class="u-custom-font u-font-source-sans-pro u-hover-feature u-text u-text-9"><span class="u-file-icon u-icon"><img src="{% static 'onlineshop/images/11821096.png' %}" alt=""></span>Tarim ve Kapakli Siseler
                 </h6>
-                <h6 class="u-custom-font u-font-source-sans-pro u-hover-feature u-text u-text-10"><span class="u-file-icon u-icon"><img src="images/11821096.png" alt=""></span>&nbsp;Droper<br>
+                <h6 class="u-custom-font u-font-source-sans-pro u-hover-feature u-text u-text-10"><span class="u-file-icon u-icon"><img src="{% static 'onlineshop/images/11821096.png' %}" alt=""></span>&nbsp;Droper<br>
                 </h6>
               </div>
             </div>
             <div class="u-container-style u-tab-pane u-white u-tab-pane-3" id="tab-d0ca" role="tabpanel" aria-labelledby="link-tab-d0ca">
               <div class="u-container-layout u-container-layout-3">
-                <img alt="" class="u-expanded-width-xs u-image u-image-default u-image-3" data-image-width="509" data-image-height="339" src="images/Jasr2.jpg">
+                <img alt="" class="u-expanded-width-xs u-image u-image-default u-image-3" data-image-width="509" data-image-height="339" src="{% static 'onlineshop/images/Jasr2.jpg' %}">
                 <h4 class="u-text u-text-11">PET/PE/PP URUNLER</h4>
-                <h6 class="u-custom-font u-font-source-sans-pro u-hover-feature u-text u-text-12"><span class="u-file-icon u-icon"><img src="images/11821096.png" alt=""></span>&nbsp;Polietelen SIseler
+                <h6 class="u-custom-font u-font-source-sans-pro u-hover-feature u-text u-text-12"><span class="u-file-icon u-icon"><img src="{% static 'onlineshop/images/11821096.png' %}" alt=""></span>&nbsp;Polietelen SIseler
                 </h6>
-                <h6 class="u-custom-font u-font-source-sans-pro u-hover-feature u-text u-text-13"><span class="u-file-icon u-icon"><img src="images/11821096.png" alt=""></span>&nbsp;Pet Siseler
+                <h6 class="u-custom-font u-font-source-sans-pro u-hover-feature u-text u-text-13"><span class="u-file-icon u-icon"><img src="{% static 'onlineshop/images/11821096.png' %}" alt=""></span>&nbsp;Pet Siseler
                 </h6>
-                <h6 class="u-custom-font u-font-source-sans-pro u-hover-feature u-text u-text-14"><span class="u-file-icon u-icon"><img src="images/11821096.png" alt=""></span>Tarim ve Kapakli Siseler
+                <h6 class="u-custom-font u-font-source-sans-pro u-hover-feature u-text u-text-14"><span class="u-file-icon u-icon"><img src="{% static 'onlineshop/images/11821096.png' %}" alt=""></span>Tarim ve Kapakli Siseler
                 </h6>
-                <h6 class="u-custom-font u-font-source-sans-pro u-hover-feature u-text u-text-15"><span class="u-file-icon u-icon"><img src="images/11821096.png" alt=""></span>&nbsp;Droper<br>
+                <h6 class="u-custom-font u-font-source-sans-pro u-hover-feature u-text u-text-15"><span class="u-file-icon u-icon"><img src="{% static 'onlineshop/images/11821096.png' %}" alt=""></span>&nbsp;Droper<br>
                 </h6>
               </div>
             </div>
             <div class="u-container-style u-tab-pane u-white u-tab-pane-4" id="tab-fb30" role="tabpanel" aria-labelledby="link-tab-fb30">
               <div class="u-container-layout u-container-layout-4">
-                <img alt="" class="u-expanded-width-xs u-image u-image-default u-image-4" data-image-width="509" data-image-height="339" src="images/Jasr2.jpg">
+                <img alt="" class="u-expanded-width-xs u-image u-image-default u-image-4" data-image-width="509" data-image-height="339" src="{% static 'onlineshop/images/Jasr2.jpg' %}">
                 <h4 class="u-text u-text-16">PET/PE/PP URUNLER</h4>
-                <h6 class="u-custom-font u-font-source-sans-pro u-hover-feature u-text u-text-17"><span class="u-file-icon u-icon"><img src="images/11821096.png" alt=""></span>&nbsp;Polietelen SIseler
+                <h6 class="u-custom-font u-font-source-sans-pro u-hover-feature u-text u-text-17"><span class="u-file-icon u-icon"><img src="{% static 'onlineshop/images/11821096.png' %}" alt=""></span>&nbsp;Polietelen SIseler
                 </h6>
-                <h6 class="u-custom-font u-font-source-sans-pro u-hover-feature u-text u-text-18"><span class="u-file-icon u-icon"><img src="images/11821096.png" alt=""></span>&nbsp;Pet Siseler
+                <h6 class="u-custom-font u-font-source-sans-pro u-hover-feature u-text u-text-18"><span class="u-file-icon u-icon"><img src="{% static 'onlineshop/images/11821096.png' %}" alt=""></span>&nbsp;Pet Siseler
                 </h6>
-                <h6 class="u-custom-font u-font-source-sans-pro u-hover-feature u-text u-text-19"><span class="u-file-icon u-icon"><img src="images/11821096.png" alt=""></span>Tarim ve Kapakli Siseler
+                <h6 class="u-custom-font u-font-source-sans-pro u-hover-feature u-text u-text-19"><span class="u-file-icon u-icon"><img src="{% static 'onlineshop/images/11821096.png' %}" alt=""></span>Tarim ve Kapakli Siseler
                 </h6>
-                <h6 class="u-custom-font u-font-source-sans-pro u-hover-feature u-text u-text-20"><span class="u-file-icon u-icon"><img src="images/11821096.png" alt=""></span>&nbsp;Droper<br>
+                <h6 class="u-custom-font u-font-source-sans-pro u-hover-feature u-text u-text-20"><span class="u-file-icon u-icon"><img src="{% static 'onlineshop/images/11821096.png' %}" alt=""></span>&nbsp;Droper<br>
                 </h6>
               </div>
             </div>
@@ -240,26 +242,26 @@ c6.177,6.18,9.262,14.271,9.262,22.366C354.708,234.018,351.617,242.115,345.441,24
       <div class="u-list u-list-1">
         <div class="u-repeater u-repeater-1">
           <div class="u-align-center u-container-style u-list-item u-radius-20 u-repeater-item u-shape-round u-white u-list-item-1" data-animation-direction="Up" data-animation-name="customAnimationIn" data-animation-duration="1500" data-animation-delay="500">
-            <div class="u-container-layout u-similar-container u-valign-top u-container-layout-1"><span class="u-file-icon u-icon u-text-grey-80 u-icon-1"><img src="images/535239-0b49b0e2.png" alt=""></span>
+            <div class="u-container-layout u-similar-container u-valign-top u-container-layout-1"><span class="u-file-icon u-icon u-text-grey-80 u-icon-1"><img src="{% static 'onlineshop/images/535239-0b49b0e2.png' %}" alt=""></span>
               <h5 class="u-text u-text-1">our main office</h5>
               <p class="u-text u-text-2">SoHo 94 Broadway St New York, NY 1001</p>
             </div>
           </div>
           <div class="u-align-center u-container-style u-list-item u-radius-20 u-repeater-item u-shape-round u-white u-list-item-2" data-animation-direction="Up" data-animation-name="customAnimationIn" data-animation-duration="1500" data-animation-delay="500">
-            <div class="u-container-layout u-similar-container u-valign-top u-container-layout-2"><span class="u-file-icon u-icon u-text-grey-80 u-icon-2"><img src="images/159832-4946e4ab.png" alt=""></span>
+            <div class="u-container-layout u-similar-container u-valign-top u-container-layout-2"><span class="u-file-icon u-icon u-text-grey-80 u-icon-2"><img src="{% static 'onlineshop/images/159832-4946e4ab.png' %}" alt=""></span>
               <h5 class="u-text u-text-3">phone number</h5>
               <p class="u-text u-text-4">234-9876-5400 <br>888-0123-4567 (Toll Free)
               </p>
             </div>
           </div>
           <div class="u-align-center u-container-style u-list-item u-radius-20 u-repeater-item u-shape-round u-white u-list-item-3" data-animation-direction="Up" data-animation-name="customAnimationIn" data-animation-duration="1500" data-animation-delay="500">
-            <div class="u-container-layout u-similar-container u-valign-top u-container-layout-3"><span class="u-file-icon u-icon u-text-grey-80 u-icon-3"><img src="images/953831-1a461f81.png" alt=""></span>
+            <div class="u-container-layout u-similar-container u-valign-top u-container-layout-3"><span class="u-file-icon u-icon u-text-grey-80 u-icon-3"><img src="{% static 'onlineshop/images/953831-1a461f81.png' %}" alt=""></span>
               <h5 class="u-text u-text-5">Fax</h5>
               <p class="u-text u-text-6">1-234-567-8900</p>
             </div>
           </div>
           <div class="u-align-center u-container-style u-list-item u-radius-20 u-repeater-item u-shape-round u-white u-list-item-4" data-animation-name="customAnimationIn" data-animation-duration="1500" data-animation-delay="500">
-            <div class="u-container-layout u-similar-container u-valign-top u-container-layout-4"><span class="u-file-icon u-icon u-text-grey-80 u-icon-4"><img src="images/561127-793f4b82.png" alt=""></span>
+            <div class="u-container-layout u-similar-container u-valign-top u-container-layout-4"><span class="u-file-icon u-icon u-text-grey-80 u-icon-4"><img src="{% static 'onlineshop/images/561127-793f4b82.png' %}" alt=""></span>
               <h5 class="u-text u-text-7">Email</h5>
               <p class="u-text u-text-8">
                 <a href="mailto:hello@theme.com" class="u-active-none u-border-1 u-border-no-left u-border-no-right u-border-no-top u-border-palette-1-base u-btn u-button-link u-button-style u-hover-none u-none u-text-palette-1-base u-btn-1">hello@theme.com</a>
@@ -338,7 +340,7 @@ c6.177,6.18,9.262,14.271,9.262,22.366C354.708,234.018,351.617,242.115,345.441,24
     <footer class="u-align-center u-clearfix u-footer u-grey-80 u-footer" id="sec-d9e6"><div class="u-clearfix u-sheet u-sheet-1">
         <p class="u-small-text u-text u-text-variant u-text-1">BILGER</p>
         <p class="u-small-text u-text u-text-variant u-text-2">Iletisim </p>
-        <img class="u-image u-image-default u-preserve-proportions u-image-1" src="images/gc34476ab4f72df5338bfe340243fc055995f0934459df7878a4cb09ef2c7a18ff81c09c4b55b521ba4bfed0304db55a9_1280.png" alt="" data-image-width="1280" data-image-height="1280">
+        <img class="u-image u-image-default u-preserve-proportions u-image-1" src="{% static 'onlineshop/images/gc34476ab4f72df5338bfe340243fc055995f0934459df7878a4cb09ef2c7a18ff81c09c4b55b521ba4bfed0304db55a9_1280.png' %}" alt="" data-image-width="1280" data-image-height="1280">
         <p class="u-small-text u-text u-text-variant u-text-3">Numune Talebi</p>
         <p class="u-small-text u-text u-text-variant u-text-4">Calisma Saatleri</p>
         <p class="u-small-text u-text u-text-variant u-text-5">Iletisim </p>
