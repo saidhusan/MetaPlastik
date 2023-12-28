@@ -7,16 +7,14 @@
     <title>Products</title>
     {% load static %}
 
-    <link rel="stylesheet" href="{% static 'onlineshop/nicepage_products.css' %}" media="screen">
+    <link rel="stylesheet" href="{% static 'onlineshop/nicepage.css' %}" media="screen">
      <link rel="stylesheet" href="{% static 'onlineshop/Products.css' %}" media="screen">
     <script class="u-script" type="text/javascript" src="{% static 'onlineshop/jquery.js' %}" defer=""></script>
-    <script class="u-script" type="text/javascript" src="{% static 'onlineshop/nicepage_products.js' %}" defer=""></script>
+    <script class="u-script" type="text/javascript" src="{% static 'onlineshop/nicepage.js' %}" defer=""></script>
 
     <meta name="generator" content="Nicepage 5.17.1, nicepage.com">
-    <meta name="referrer" content="origin">
     <link id="u-theme-google-font" rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i|Open+Sans:300,300i,400,400i,500,500i,600,600i,700,700i,800,800i">
     <link id="u-page-google-font" rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:200,200i,300,300i,400,400i,600,600i,700,700i,900,900i">
-    
     
     
     
@@ -24,15 +22,15 @@
 		"@context": "http://schema.org",
 		"@type": "Organization",
 		"name": "",
-		"logo": "images/gc34476ab4f72df5338bfe340243fc055995f0934459df7878a4cb09ef2c7a18ff81c09c4b55b521ba4bfed0304db55a9_1280.png"
+		"logo": "{% static 'onlineshop/images/logo.png' %}"
 }</script>
     <meta name="theme-color" content="#1b356a">
     <meta property="og:title" content="Products">
     <meta property="og:type" content="website">
   <meta data-intl-tel-input-cdn-path="intlTelInput/"></head>
-  <body class="u-body u-xl-mode" data-lang="ru"><header class="u-clearfix u-header u-valign-bottom-lg u-valign-bottom-xl u-header" id="sec-cede" data-animation-name="" data-animation-duration="0" data-animation-delay="0" data-animation-direction=""><a href="https://nicepage.com" class="u-image u-logo u-image-1" data-image-width="1280" data-image-height="1280">
-        <img src="images/gc34476ab4f72df5338bfe340243fc055995f0934459df7878a4cb09ef2c7a18ff81c09c4b55b521ba4bfed0304db55a9_1280.png" class="u-logo-image u-logo-image-1">
-      </a><h5 class="u-custom-font u-font-source-sans-pro u-text u-text-1">Meta Plastik</h5><nav class="u-menu u-menu-one-level u-offcanvas u-menu-1">
+  <body class="u-body u-xl-mode" data-lang="ru"><header class="u-clearfix u-header u-header" id="sec-cede" data-animation-name="" data-animation-duration="0" data-animation-delay="0" data-animation-direction=""><a href="{% url 'onlineshop:main_page' %}" class="u-image u-logo u-image-1" data-image-width="1280" data-image-height="1280" title="-">
+        <img src="{% static 'onlineshop/images/logo.png' %}" class="u-logo-image u-logo-image-1">
+      </a><h5 class="u-custom-font u-font-source-sans-pro u-text u-text-1">Meta Plastik</h5><nav class="u-dropdown-icon u-menu u-menu-dropdown u-offcanvas u-menu-1" data-responsive-from="MD" data-submenu-level="on-click">
         <div class="menu-collapse">
           <a class="u-button-style u-nav-link" href="#">
             <svg class="u-svg-link" viewBox="0 0 24 24"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#svg-f6ec"></use></svg>
@@ -41,131 +39,186 @@
           </a>
         </div>
         <div class="u-custom-menu u-nav-container">
-          <ul class="u-nav u-unstyled"><li class="u-nav-item"><a class="u-button-style u-nav-link" href="main.html">ANASAYFA</a>
-</li><li class="u-nav-item"><a class="u-button-style u-nav-link" href="Products.html">ÜRÜNLER</a>
-</li><li class="u-nav-item"><a class="u-button-style u-nav-link" href="#">HAKKIMIZDA</a>
-</li><li class="u-nav-item"><a class="u-button-style u-nav-link" href="contacts.html">İLETİŞİM</a>
+          <ul class="u-nav u-unstyled"><li class="u-nav-item"><a class="u-button-style u-nav-link" href="{% url 'onlineshop:main_page' %}">ANASAYFA</a>
+</li><li class="u-nav-item"><a class="u-button-style u-nav-link" href="{% url 'onlineshop:all_products' %}">ÜRÜNLER</a><div class="u-nav-popup"><ul class="u-h-spacing-20 u-nav u-unstyled u-v-spacing-10"><li class="u-nav-item"><a class="u-button-style u-nav-link u-white" href="{% url 'onlineshop:get_list_by_main_type' 'PET\PE\PP ÜRÜNLER' %}">PET\PE\PP ÜRÜNLER</a><div class="u-nav-popup"><ul class="u-h-spacing-20 u-nav u-unstyled u-v-spacing-10"><li class="u-nav-item"><a class="u-button-style u-nav-link u-white" href="{% url 'onlineshop:get_list_by_sub_type' 'Pet Şişeler' %}">Pet Şişeler</a>
+</li><li class="u-nav-item"><a class="u-button-style u-nav-link u-white" href="{% url 'onlineshop:get_list_by_sub_type' 'Polietılen Şişeler' %}">Polietılen Şişeler</a>
+</li><li class="u-nav-item"><a class="u-button-style u-nav-link u-white" href="{% url 'onlineshop:get_list_by_sub_type' 'Tarım ve Kımyevı Şişeler' %}">Tarım ve Kımyevı Şişeler</a>
+</li><li class="u-nav-item"><a class="u-button-style u-nav-link u-white" href="{% url 'onlineshop:get_list_by_sub_type' 'Kartuş Kapaklı Şişeler' %}">Kartuş Kapaklı Şişeler</a>
+</li><li class="u-nav-item"><a class="u-button-style u-nav-link u-white" href="{% url 'onlineshop:get_list_by_sub_type' 'Tablet Kapsül ve İlaç Şişeleri' %}">Tablet Kapsül ve İlaç Şişeleri</a>
+</li><li class="u-nav-item"><a class="u-button-style u-nav-link u-white" href="{% url 'onlineshop:get_list_by_sub_type' 'Damlalıklı Likit Şişeler' %}">Damlalıklı Likit Şişeler</a>
+</li><li class="u-nav-item"><a class="u-button-style u-nav-link u-white" href="{% url 'onlineshop:get_list_by_sub_type' 'Pisetler' %}">Pisetler</a>
+</li><li class="u-nav-item"><a class="u-button-style u-nav-link u-white" href="{% url 'onlineshop:get_list_by_sub_type' 'Şampuan Şişeleri' %}">Şampuan Şişeleri</a>
+</li></ul>
+</div>
+</li><li class="u-nav-item"><a class="u-button-style u-nav-link u-white">CAM ÜRÜNLER</a><div class="u-nav-popup"><ul class="u-h-spacing-20 u-nav u-unstyled u-v-spacing-10"><li class="u-nav-item"><a class="u-button-style u-nav-link u-white" href="{% url 'onlineshop:get_list_by_sub_type' 'Dropper Şişeler' %}">Dropper Şişeler</a>
+</li><li class="u-nav-item"><a class="u-button-style u-nav-link u-white" href="{% url 'onlineshop:get_list_by_sub_type' 'Tablet Şişeler' %}">Tablet Şişeler</a>
+</li><li class="u-nav-item"><a class="u-button-style u-nav-link u-white" href="{% url 'onlineshop:get_list_by_sub_type' 'Flakon ve Penisilin Şişeler' %}">Flakon ve Penisilin Şişeler</a>
+</li><li class="u-nav-item"><a class="u-button-style u-nav-link u-white" href="{% url 'onlineshop:get_list_by_sub_type' 'Cam Beherler' %}">Cam Beherler</a>
+</li><li class="u-nav-item"><a class="u-button-style u-nav-link u-white" href="{% url 'onlineshop:get_list_by_sub_type' 'Ecza Şişeler' %}">Ecza Şişeler</a>
+</li><li class="u-nav-item"><a class="u-button-style u-nav-link u-white" href="{% url 'onlineshop:get_list_by_sub_type' 'Yağ Şişeler' %}">Yağ Şişeler</a>
+</li><li class="u-nav-item"><a class="u-button-style u-nav-link u-white" href="{% url 'onlineshop:get_list_by_sub_type' 'Airless Şişeler' %}">Airless Şişeler</a>
+</li><li class="u-nav-item"><a class="u-button-style u-nav-link u-white" href="{% url 'onlineshop:get_list_by_sub_type' 'Cam Kozmetik Kavanozları' %}">Cam Kozmetik Kavanozları</a>
+</li></ul>
+</div>
+</li><li class="u-nav-item"><a class="u-button-style u-nav-link u-white">KAVANOZ/BİDON/KOVA/BEHER</a><div class="u-nav-popup"><ul class="u-h-spacing-20 u-nav u-unstyled u-v-spacing-10"><li class="u-nav-item"><a class="u-button-style u-nav-link u-white" href="{% url 'onlineshop:get_list_by_sub_type' 'PET Kavanozlar' %}">PET Kavanozlar</a>
+</li><li class="u-nav-item"><a class="u-button-style u-nav-link u-white" href="{% url 'onlineshop:get_list_by_sub_type' 'PE\PP Kavanozlar' %}">PE\PP Kavanozlar</a>
+</li><li class="u-nav-item"><a class="u-button-style u-nav-link u-white" href="{% url 'onlineshop:get_list_by_sub_type' 'Pomat Kutuları' %}">Pomat Kutuları</a>
+</li><li class="u-nav-item"><a class="u-button-style u-nav-link u-white" href="{% url 'onlineshop:get_list_by_sub_type' 'Sporcu Gıda Kavanozları' %}">Sporcu Gıda Kavanozları</a>
+</li><li class="u-nav-item"><a class="u-button-style u-nav-link u-white" href="{% url 'onlineshop:get_list_by_sub_type' 'Çanta Bidonlar' %}">Çanta Bidonlar</a>
+</li><li class="u-nav-item"><a class="u-button-style u-nav-link u-white" href="{% url 'onlineshop:get_list_by_sub_type' 'Çemberli Bidonlar' %}">Çemberli Bidonlar</a>
+</li><li class="u-nav-item"><a class="u-button-style u-nav-link u-white" href="{% url 'onlineshop:get_list_by_sub_type' 'Plastik Beherler' %}">Plastik Beherler</a>
+</li><li class="u-nav-item"><a class="u-button-style u-nav-link u-white" href="{% url 'onlineshop:get_list_by_sub_type' 'Saklama Kabları ve Kovalar' %}">Saklama Kabları ve Kovalar</a>
+</li></ul>
+</div>
+</li><li class="u-nav-item"><a class="u-button-style u-nav-link u-white">AKSESUARLAR</a><div class="u-nav-popup"><ul class="u-h-spacing-20 u-nav u-unstyled u-v-spacing-10"><li class="u-nav-item"><a class="u-button-style u-nav-link u-white" href="{% url 'onlineshop:get_list_by_sub_type' 'Contalar' %}">Contalar</a>
+</li><li class="u-nav-item"><a class="u-button-style u-nav-link u-white" href="{% url 'onlineshop:get_list_by_sub_type' 'Damlalıklar' %}">Damlalıklar</a>
+</li><li class="u-nav-item"><a class="u-button-style u-nav-link u-white" href="{% url 'onlineshop:get_list_by_sub_type' 'Huniler' %}">Huniler</a>
+</li><li class="u-nav-item"><a class="u-button-style u-nav-link u-white" href="{% url 'onlineshop:get_list_by_sub_type' 'Kapaklar' %}">Kapaklar</a>
+</li><li class="u-nav-item"><a class="u-button-style u-nav-link u-white" href="{% url 'onlineshop:get_list_by_sub_type' 'Kaşık Ölçekler' %}">Kaşık Ölçekler</a>
+</li><li class="u-nav-item"><a class="u-button-style u-nav-link u-white" href="{% url 'onlineshop:get_list_by_sub_type' 'Kulpsuz Ölçekler' %}">Kulpsuz Ölçekler</a>
+</li><li class="u-nav-item"><a class="u-button-style u-nav-link u-white" href="{% url 'onlineshop:get_list_by_sub_type' 'Parmak Spreyler' %}">Parmak Spreyler</a>
+</li><li class="u-nav-item"><a class="u-button-style u-nav-link u-white" href="{% url 'onlineshop:get_list_by_sub_type' 'Pompalar' %}">Pompalar</a>
+</li><li class="u-nav-item"><a class="u-button-style u-nav-link u-white" href="{% url 'onlineshop:get_list_by_sub_type' 'Tetikli Püskürtücüler' %}">Tetikli Püskürtücüler</a>
+</li><li class="u-nav-item"><a class="u-button-style u-nav-link u-white" href="{% url 'onlineshop:get_list_by_sub_type' 'Tıpalar' %}">Tıpalar</a>
+</li></ul>
+</div>
+</li></ul>
+</div>
+</li><li class="u-nav-item"><a class="u-button-style u-nav-link" href="{% url 'onlineshop:add_bottle' %}">HAKKIMIZDA</a>
+</li><li class="u-nav-item"><a class="u-button-style u-nav-link" href="{% url 'onlineshop:main_page' %}">İLETİŞİM</a>
 </li></ul>
         </div>
         <div class="u-custom-menu u-nav-container-collapse">
-          <div class="u-black u-container-style u-inner-container-layout u-opacity u-opacity-95 u-sidenav">
+          <div class="u-black u-container-style u-inner-container-layout u-opacity u-opacity-95 u-sidenav u-sidenav-1" data-offcanvas-width="325">
             <div class="u-inner-container-layout u-sidenav-overflow">
               <div class="u-menu-close"></div>
-              <ul class="u-align-center u-nav u-popupmenu-items u-unstyled u-nav-2"><li class="u-nav-item"><a class="u-button-style u-nav-link" href="main.html">ANASAYFA</a>
-</li><li class="u-nav-item"><a class="u-button-style u-nav-link" href="Products.html">ÜRÜNLER</a>
-</li><li class="u-nav-item"><a class="u-button-style u-nav-link" href="#">HAKKIMIZDA</a>
-</li><li class="u-nav-item"><a class="u-button-style u-nav-link" href="contacts.html">İLETİŞİM</a>
+              <ul class="u-align-center u-nav u-popupmenu-items u-unstyled u-nav-7"><li class="u-nav-item"><a class="u-button-style u-nav-link" href="{% url 'onlineshop:main_page' %}">ANASAYFA</a>
+</li><li class="u-nav-item"><a class="u-button-style u-nav-link" href="{% url 'onlineshop:all_products' %}">ÜRÜNLER</a><div class="u-nav-popup"><ul class="u-h-spacing-20 u-nav u-unstyled u-v-spacing-10"><li class="u-nav-item"><a class="u-button-style u-nav-link" href="{% url 'onlineshop:get_list_by_main_type' 'PET\PE\PP ÜRÜNLER' %}">PET\PE\PP ÜRÜNLER</a><div class="u-nav-popup"><ul class="u-h-spacing-20 u-nav u-unstyled u-v-spacing-10"><li class="u-nav-item"><a class="u-button-style u-nav-link" href="{% url 'onlineshop:get_list_by_sub_type' 'Pet Şişeler' %}">Pet Şişeler</a>
+</li><li class="u-nav-item"><a class="u-button-style u-nav-link" href="{% url 'onlineshop:get_list_by_sub_type' 'Polietılen Şişeler' %}">Polietılen Şişeler</a>
+</li><li class="u-nav-item"><a class="u-button-style u-nav-link" href="{% url 'onlineshop:get_list_by_sub_type' 'Tarım ve Kımyevı Şişeler' %}">Tarım ve Kımyevı Şişeler</a>
+</li><li class="u-nav-item"><a class="u-button-style u-nav-link" href="{% url 'onlineshop:get_list_by_sub_type' 'Kartuş Kapaklı Şişeler' %}">Kartuş Kapaklı Şişeler</a>
+</li><li class="u-nav-item"><a class="u-button-style u-nav-link" href="{% url 'onlineshop:get_list_by_sub_type' 'Tablet Kapsül ve İlaç Şişeleri' %}">Tablet Kapsül ve İlaç Şişeleri</a>
+</li><li class="u-nav-item"><a class="u-button-style u-nav-link" href="{% url 'onlineshop:get_list_by_sub_type' 'Damlalıklı Likit Şişeler' %}">Damlalıklı Likit Şişeler</a>
+</li><li class="u-nav-item"><a class="u-button-style u-nav-link" href="{% url 'onlineshop:get_list_by_sub_type' 'Pisetler' %}">Pisetler</a>
+</li><li class="u-nav-item"><a class="u-button-style u-nav-link" href="{% url 'onlineshop:get_list_by_sub_type' 'Şampuan Şişeleri' %}">Şampuan Şişeleri</a>
+</li></ul>
+</div>
+</li><li class="u-nav-item"><a class="u-button-style u-nav-link">CAM ÜRÜNLER</a><div class="u-nav-popup"><ul class="u-h-spacing-20 u-nav u-unstyled u-v-spacing-10"><li class="u-nav-item"><a class="u-button-style u-nav-link" href="{% url 'onlineshop:get_list_by_sub_type' 'Dropper Şişeler' %}">Dropper Şişeler</a>
+</li><li class="u-nav-item"><a class="u-button-style u-nav-link" href="{% url 'onlineshop:get_list_by_sub_type' 'Tablet Şişeler' %}">Tablet Şişeler</a>
+</li><li class="u-nav-item"><a class="u-button-style u-nav-link" href="{% url 'onlineshop:get_list_by_sub_type' 'Flakon ve Penisilin Şişeler' %}">Flakon ve Penisilin Şişeler</a>
+</li><li class="u-nav-item"><a class="u-button-style u-nav-link" href="{% url 'onlineshop:get_list_by_sub_type' 'Cam Beherler' %}">Cam Beherler</a>
+</li><li class="u-nav-item"><a class="u-button-style u-nav-link" href="{% url 'onlineshop:get_list_by_sub_type' 'Ecza Şişeler' %}">Ecza Şişeler</a>
+</li><li class="u-nav-item"><a class="u-button-style u-nav-link" href="{% url 'onlineshop:get_list_by_sub_type' 'Yağ Şişeler' %}">Yağ Şişeler</a>
+</li><li class="u-nav-item"><a class="u-button-style u-nav-link" href="{% url 'onlineshop:get_list_by_sub_type' 'Airless Şişeler' %}">Airless Şişeler</a>
+</li><li class="u-nav-item"><a class="u-button-style u-nav-link" href="{% url 'onlineshop:get_list_by_sub_type' 'Cam Kozmetik Kavanozları' %}">Cam Kozmetik Kavanozları</a>
+</li></ul>
+</div>
+</li><li class="u-nav-item"><a class="u-button-style u-nav-link">KAVANOZ/BİDON/KOVA/BEHER</a><div class="u-nav-popup"><ul class="u-h-spacing-20 u-nav u-unstyled u-v-spacing-10"><li class="u-nav-item"><a class="u-button-style u-nav-link" href="{% url 'onlineshop:get_list_by_sub_type' 'PET Kavanozlar' %}">PET Kavanozlar</a>
+</li><li class="u-nav-item"><a class="u-button-style u-nav-link" href="{% url 'onlineshop:get_list_by_sub_type' 'PE\PP Kavanozlar' %}">PE\PP Kavanozlar</a>
+</li><li class="u-nav-item"><a class="u-button-style u-nav-link" href="{% url 'onlineshop:get_list_by_sub_type' 'Pomat Kutuları' %}">Pomat Kutuları</a>
+</li><li class="u-nav-item"><a class="u-button-style u-nav-link" href="{% url 'onlineshop:get_list_by_sub_type' 'Sporcu Gıda Kavanozları' %}">Sporcu Gıda Kavanozları</a>
+</li><li class="u-nav-item"><a class="u-button-style u-nav-link" href="{% url 'onlineshop:get_list_by_sub_type' 'Çanta Bidonlar' %}">Çanta Bidonlar</a>
+</li><li class="u-nav-item"><a class="u-button-style u-nav-link" href="{% url 'onlineshop:get_list_by_sub_type' 'Çemberli Bidonlar' %}">Çemberli Bidonlar</a>
+</li><li class="u-nav-item"><a class="u-button-style u-nav-link" href="{% url 'onlineshop:get_list_by_sub_type' 'Plastik Beherler' %}">Plastik Beherler</a>
+</li><li class="u-nav-item"><a class="u-button-style u-nav-link" href="{% url 'onlineshop:get_list_by_sub_type' 'Saklama Kabları ve Kovalar' %}">Saklama Kabları ve Kovalar</a>
+</li></ul>
+</div>
+</li><li class="u-nav-item"><a class="u-button-style u-nav-link">AKSESUARLAR</a><div class="u-nav-popup"><ul class="u-h-spacing-20 u-nav u-unstyled u-v-spacing-10"><li class="u-nav-item"><a class="u-button-style u-nav-link" href="{% url 'onlineshop:get_list_by_sub_type' 'Contalar' %}">Contalar</a>
+</li><li class="u-nav-item"><a class="u-button-style u-nav-link" href="{% url 'onlineshop:get_list_by_sub_type' 'Damlalıklar' %}">Damlalıklar</a>
+</li><li class="u-nav-item"><a class="u-button-style u-nav-link" href="{% url 'onlineshop:get_list_by_sub_type' 'Huniler' %}">Huniler</a>
+</li><li class="u-nav-item"><a class="u-button-style u-nav-link" href="{% url 'onlineshop:get_list_by_sub_type' 'Kapaklar' %}">Kapaklar</a>
+</li><li class="u-nav-item"><a class="u-button-style u-nav-link" href="{% url 'onlineshop:get_list_by_sub_type' 'Kaşık Ölçekler' %}">Kaşık Ölçekler</a>
+</li><li class="u-nav-item"><a class="u-button-style u-nav-link" href="{% url 'onlineshop:get_list_by_sub_type' 'Kulpsuz Ölçekler' %}">Kulpsuz Ölçekler</a>
+</li><li class="u-nav-item"><a class="u-button-style u-nav-link" href="{% url 'onlineshop:get_list_by_sub_type' 'Parmak Spreyler' %}">Parmak Spreyler</a>
+</li><li class="u-nav-item"><a class="u-button-style u-nav-link" href="{% url 'onlineshop:get_list_by_sub_type' 'Pompalar' %}">Pompalar</a>
+</li><li class="u-nav-item"><a class="u-button-style u-nav-link" href="{% url 'onlineshop:get_list_by_sub_type' 'Tetikli Püskürtücüler' %}">Tetikli Püskürtücüler</a>
+</li><li class="u-nav-item"><a class="u-button-style u-nav-link" href="{% url 'onlineshop:get_list_by_sub_type' 'Tıpalar' %}">Tıpalar</a>
+</li></ul>
+</div>
+</li></ul>
+</div>
+</li><li class="u-nav-item"><a class="u-button-style u-nav-link" href="{% url 'onlineshop:add_bottle' %}">HAKKIMIZDA</a>
+</li><li class="u-nav-item"><a class="u-button-style u-nav-link" href="{% url 'onlineshop:main_page' %}">İLETİŞİM</a>
 </li></ul>
             </div>
           </div>
           <div class="u-black u-menu-overlay u-opacity u-opacity-70"></div>
         </div>
-      </nav><div class="u-border-3 u-border-grey-dark-1 u-expanded-width u-line u-line-horizontal u-line-1"></div></header>
-    <section class="u-clearfix u-section-1" id="sec-527d">
-      <div class="u-clearfix u-sheet u-sheet-1">
-        <h3 class="u-align-center u-text u-text-1">Pet Siseler</h3>
-        <div class="u-border-3 u-border-palette-1-base u-container-style u-expanded-width u-group u-group-1">
-          <div class="u-container-layout u-container-layout-1">
-            <h5 class="u-text u-text-default u-text-2">Пример заголовка</h5>
-              <div class="u-form-group u-form-select u-label-none u-form-group-1">
-												  <ul class="nav">
-							<li>
-								<a href="#">Menu 1</a>
-								<ul>
-									<li><a href="#">Sub Menu Item</a></li>
-									<li><a href="#">Sub Menu Item</a></li>
-									<li><a href="#">Sub Menu Item</a></li>
-								</ul>
-							</li>
-							<li>
-								<a href="#">Menu 2</a>
-								<ul>
-									<li><a href="#">Sub Menu Item</a></li>
-									<li><a href="#">Sub Menu Item</a></li>
-									<li><a href="#">Sub Menu Item</a></li>
-								</ul>
-							</li>
-							<li>
-								<a href="#">Menu 3</a>
-								<ul>
-									<li><a href="#">Sub Menu Item</a></li>
-									<li><a href="#">Sub Menu Item</a></li>
-									<li><a href="#">Sub Menu Item</a></li>
-								</ul>
-							</li>
-						</ul>
-							</div>
-
-          </div>
-        </div>
-      </div>
-    </section>
-    <section class="u-clearfix u-section-2" id="sec-5160">
-      <div class="u-clearfix u-sheet u-sheet-1">
-        <div class="u-list u-list-1">
+      </nav><div class="u-border-3 u-border-grey-dark-1 u-expanded-width u-hidden-xs u-line u-line-horizontal u-line-1"></div></header>
+    <section class="u-clearfix u-section-1" id="sec-5160">
+      <div class="u-clearfix u-sheet u-valign-top-xs u-sheet-1">
+        <a href="https://nicepage.review" class="u-border-none u-btn u-button-style u-palette-3-light-1 u-btn-1">Filter</a>
+        <div class="u-expanded-width u-list u-list-1">
           <div class="u-repeater u-repeater-1">
-
-                           {% for product in product_list %}
-
-            <div class="u-container-style u-list-item u-repeater-item">
+              {% for product in product_list %}
+              <a href="{% url 'onlineshop:product_info' product.name %}">
+            <div class="u-container-style u-hover-feature u-list-item u-repeater-item u-shape-rectangle u-list-item-1">
               <div class="u-container-layout u-similar-container u-container-layout-1">
-                <img class="u-image u-image-1" src="{% static 'onlineshop/images/90fc53c9.svg' %}" data-image-width="2000" data-image-height="1333">
-                <h5 class="u-align-center u-custom-font u-font-source-sans-pro u-text u-text-default u-text-1">ASYA 100 - 100 ML</h5>
-                <div class="u-border-1 u-border-grey-dark-1 u-line u-line-horizontal u-opacity u-opacity-80 u-line-1"></div>
+                <img class="u-border-1 u-border-grey-15 u-expanded-width-xs u-hover-feature u-image u-image-1" src="{{ product.img_url}}" data-image-width="2000" data-image-height="1333">
+                <h5 class="u-align-center u-custom-font u-font-source-sans-pro u-text u-text-default u-text-1">{{ product.name }}</h5>
+                <div class="u-border-1 u-border-grey-dark-1 u-hidden-xs u-line u-line-horizontal u-opacity u-opacity-80 u-line-1"></div>
                 <div class="u-border-3 u-border-grey-dark-1 u-line u-line-horizontal u-line-2"></div>
               </div>
             </div>
-
-                            {% endfor %}
-
+              </a>
+                          {% endfor %}
 
           </div>
         </div>
-        <h6 class="u-text u-text-default u-text-5">Filtr</h6>
-        <div class="u-form u-form-1">
-          <form action="https://forms.nicepagesrv.com/v2/form/process" class="u-clearfix u-form-spacing-8 u-form-vertical u-inner-form" style="padding: 8px;" source="email" name="form">
-            <div class="u-form-group u-form-select u-label-top u-form-group-1" >
-
-                <label  class="u-label">Выпадающий список</label>
-                 <div class="dropdown-custom" data-control="checkbox-dropdown">
-							<label class="dropdown-label-custom">Hacim</label>
-
-								<div class="dropdown-list-custom">
-
-									<label class="dropdown-option-custom">
-									<input type="checkbox" name="volume" value="1" />
-											1 ml
-										</label>
-
-
-									</div>
-						</div>
-            </div>
-
-
-
-              <div class="u-align-center u-form-group u-form-submit u-label-top">
-              <a href="#" class="u-border-2 u-border-black u-btn u-btn-rectangle u-btn-submit u-button-style u-none u-btn-1">Submit</a>
-              <input type="submit" value="submit" class="u-form-control-hidden">
-            </div>
-            <div class="u-form-send-message u-form-send-success"> Thank you! Your message has been sent. </div>
-            <div class="u-form-send-error u-form-send-message"> Unable to send your message. Please fix errors then try again. </div>
-            <input type="hidden" value="" name="recaptchaResponse">
-            <input type="hidden" name="formServices" value="cbf0d18d-5456-ae03-71f8-2d943f80830c">
-          </form>
-        </div>
       </div>
+      
+      
     </section>
     
     
     
     <footer class="u-align-center u-clearfix u-footer u-grey-80 u-footer" id="sec-d9e6"><div class="u-clearfix u-sheet u-sheet-1">
-        <p class="u-small-text u-text u-text-variant u-text-1">BILGER</p>
-        <p class="u-small-text u-text u-text-variant u-text-2">Iletisim </p>
-        <img class="u-image u-image-default u-preserve-proportions u-image-1" src="images/gc34476ab4f72df5338bfe340243fc055995f0934459df7878a4cb09ef2c7a18ff81c09c4b55b521ba4bfed0304db55a9_1280.png" alt="" data-image-width="1280" data-image-height="1280">
-        <p class="u-small-text u-text u-text-variant u-text-3">Numune Talebi</p>
-        <p class="u-small-text u-text u-text-variant u-text-4">Calisma Saatleri</p>
-        <p class="u-small-text u-text u-text-variant u-text-5">Iletisim </p>
+        <div class="u-clearfix u-group-elements u-group-elements-1">
+          <h5 class="u-text u-text-default u-text-1">BILGILER</h5>
+          <div class="u-clearfix u-expanded-width u-group-elements u-group-elements-2">
+            <p class="u-align-left u-small-text u-text u-text-variant u-text-2">
+              <a class="u-active-none u-border-none u-btn u-button-link u-button-style u-hover-none u-none u-text-white u-btn-1" data-href="{% url 'onlineshop:get_page_by_name' 'main_page' %}">İletişim</a>
+            </p>
+            <p class="u-align-left u-small-text u-text u-text-variant u-text-3">
+              <a class="u-active-none u-border-none u-btn u-button-link u-button-style u-hover-none u-none u-text-body-alt-color u-btn-2" data-href="{% url 'onlineshop:get_page_by_name' 'main_page' %}">Numune Talebi</a>
+            </p>
+            <p class="u-align-left u-small-text u-text u-text-variant u-text-4">
+              <a class="u-active-none u-border-none u-btn u-button-link u-button-style u-hover-none u-none u-text-body-alt-color u-btn-3" data-href="{% url 'onlineshop:get_page_by_name' 'main_page' %}">Çalışma Saatleri</a>
+            </p>
+            <p class="u-align-left u-small-text u-text u-text-variant u-text-5">
+              <a class="u-active-none u-border-none u-btn u-button-link u-button-style u-hover-none u-none u-text-body-alt-color u-btn-4" data-href="{% url 'onlineshop:get_page_by_name' 'main_page' %}">Sevkıyat ve Teslimat</a>
+            </p>
+            <p class="u-align-left u-small-text u-text u-text-variant u-text-6">
+              <a class="u-active-none u-border-none u-btn u-button-link u-button-style u-hover-none u-none u-text-body-alt-color u-btn-5" data-href="{% url 'onlineshop:get_page_by_name' 'main_page' %}">Sıkça Sorulan Sorular</a>
+            </p>
+          </div>
+        </div>
+        <div class="u-clearfix u-group-elements u-group-elements-3">
+          <h5 class="u-text u-text-default u-text-7">KURUMSAL</h5>
+          <div class="u-clearfix u-expanded-width-lg u-expanded-width-md u-expanded-width-sm u-expanded-width-xl u-group-elements u-group-elements-4">
+            <p class="u-align-left u-small-text u-text u-text-variant u-text-8">
+              <a class="u-active-none u-border-none u-btn u-button-link u-button-style u-hover-none u-none u-text-white u-btn-6" data-href="{% url 'onlineshop:get_page_by_name' 'main_page' %}"> Hakkımızda</a>
+            </p>
+            <p class="u-align-left u-small-text u-text u-text-variant u-text-9">
+              <a class="u-active-none u-border-none u-btn u-button-link u-button-style u-hover-none u-none u-text-body-alt-color u-btn-7" data-href="{% url 'onlineshop:get_page_by_name' 'main_page' %}">Kalıte Polıtıkası</a>
+            </p>
+            <p class="u-align-left u-small-text u-text u-text-variant u-text-10">
+              <a class="u-active-none u-border-none u-btn u-button-link u-button-style u-hover-none u-none u-text-body-alt-color u-btn-8" data-href="{% url 'onlineshop:get_page_by_name' 'main_page' %}">Kalıte Belgelerımız</a>
+            </p>
+            <p class="u-align-left u-small-text u-text u-text-variant u-text-11">
+              <a class="u-active-none u-border-none u-btn u-button-link u-button-style u-hover-none u-none u-text-body-alt-color u-btn-9" data-href="{% url 'onlineshop:get_page_by_name' 'main_page' %}">Güvenlik ve Gızlilik</a>
+            </p>
+            <p class="u-align-left u-small-text u-text u-text-variant u-text-12">
+              <a class="u-active-none u-border-none u-btn u-button-link u-button-style u-hover-none u-none u-text-body-alt-color u-btn-10" data-href="{% url 'onlineshop:get_page_by_name' 'main_page' %}">Çerez Polıtıkası </a>
+            </p>
+          </div>
+        </div>
+        <div class="u-clearfix u-group-elements u-group-elements-5">
+          <img class="u-image u-image-default u-preserve-proportions u-image-1" src="{% static 'onlineshop/images/logo.png' %}" alt="" data-image-width="1280" data-image-height="1280">
+          <h3 class="u-headline u-text u-text-13">
+            <a href="/" style="font-size: 0.625rem;">Meta Ambalaj</a>
+          </h3>
+        </div>
       </div></footer>
     <section class="u-backlink u-clearfix u-grey-80">
       <a class="u-link" href="https://nicepage.com/website-templates" target="_blank">
