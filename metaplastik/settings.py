@@ -25,7 +25,7 @@ SECRET_KEY = 'django-insecure-c38f46!szngc=g+!7(wz92=qsskqwf7q92)v%5ils_ns+&5c2g
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['*']
 
 
 # Application definition
@@ -63,6 +63,7 @@ TEMPLATES = [
                 'django.template.context_processors.request',
                 'django.contrib.auth.context_processors.auth',
                 'django.contrib.messages.context_processors.messages',
+                'django.template.context_processors.media',
             ],
         },
     },
@@ -122,6 +123,10 @@ STATICFILES_DIRS = (
 )
 
 STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')
+
+MEDIA_ROOT =  os.path.join(BASE_DIR, 'media')
+MEDIA_URL = '/media/'
+
 
 # Default primary key field type
 # https://docs.djangoproject.com/en/4.2/ref/settings/#default-auto-field

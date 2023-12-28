@@ -2,18 +2,31 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="9f0d59f7-6227-44a0-b337-697c0310657f" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/onlineshop/static/onlineshop/nicepage_products.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/onlineshop/static/onlineshop/nicepage_products.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/onlineshop/templates/onlineshop/all_products.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/onlineshop/templates/onlineshop/all_products2.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/onlineshop/ImageManager.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/onlineshop/forms.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/onlineshop/static/onlineshop/package_added.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/onlineshop/templates/onlineshop/package_added.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/db.sqlite3" beforeDir="false" afterPath="$PROJECT_DIR$/db.sqlite3" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/onlineshop/static/onlineshop/Products.css" beforeDir="false" afterPath="$PROJECT_DIR$/onlineshop/static/onlineshop/Products.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/onlineshop/static/onlineshop/Thank-You-Page-Template.css" beforeDir="false" afterPath="$PROJECT_DIR$/onlineshop/static/onlineshop/thank_you.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/metaplastik/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/metaplastik/settings.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/metaplastik/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/metaplastik/urls.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/onlineshop/admin.py" beforeDir="false" afterPath="$PROJECT_DIR$/onlineshop/admin.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/onlineshop/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/onlineshop/models.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/onlineshop/static/onlineshop/Products.css" beforeDir="false" afterPath="$PROJECT_DIR$/onlineshop/static/onlineshop/products.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/onlineshop/static/onlineshop/add_bottle.css" beforeDir="false" afterPath="$PROJECT_DIR$/onlineshop/static/onlineshop/add_bottle.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/onlineshop/static/onlineshop/images/gc34476ab4f72df5338bfe340243fc055995f0934459df7878a4cb09ef2c7a18ff81c09c4b55b521ba4bfed0304db55a9_1280.png" beforeDir="false" afterPath="$PROJECT_DIR$/onlineshop/static/onlineshop/images/logo.png" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/onlineshop/static/onlineshop/jquery.js" beforeDir="false" afterPath="$PROJECT_DIR$/onlineshop/static/onlineshop/jquery.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/onlineshop/static/onlineshop/main.css" beforeDir="false" afterPath="$PROJECT_DIR$/onlineshop/static/onlineshop/main.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/onlineshop/static/onlineshop/nicepage.css" beforeDir="false" afterPath="$PROJECT_DIR$/onlineshop/static/onlineshop/nicepage.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/onlineshop/static/onlineshop/product_info.css" beforeDir="false" afterPath="$PROJECT_DIR$/onlineshop/static/onlineshop/product_info.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/onlineshop/templates/onlineshop/Products.html" beforeDir="false" afterPath="$PROJECT_DIR$/onlineshop/templates/onlineshop/Products.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/onlineshop/templates/onlineshop/add_bottle.html" beforeDir="false" afterPath="$PROJECT_DIR$/onlineshop/templates/onlineshop/add_bottle.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/onlineshop/templates/onlineshop/thank-you-page.html" beforeDir="false" afterPath="$PROJECT_DIR$/onlineshop/templates/onlineshop/thank_you.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/onlineshop/templates/onlineshop/all_products.html" beforeDir="false" afterPath="$PROJECT_DIR$/onlineshop/templates/onlineshop/error_page.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/onlineshop/templates/onlineshop/all_products2.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/onlineshop/templates/onlineshop/contacts.html" beforeDir="false" afterPath="$PROJECT_DIR$/onlineshop/templates/onlineshop/contacts.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/onlineshop/templates/onlineshop/main.html" beforeDir="false" afterPath="$PROJECT_DIR$/onlineshop/templates/onlineshop/main.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/onlineshop/templates/onlineshop/product_info.html" beforeDir="false" afterPath="$PROJECT_DIR$/onlineshop/templates/onlineshop/product_info.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/onlineshop/templates/onlineshop/thank_you.html" beforeDir="false" afterPath="$PROJECT_DIR$/onlineshop/templates/onlineshop/bottle_added.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/onlineshop/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/onlineshop/urls.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/onlineshop/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/onlineshop/views.py" afterDir="false" />
     </list>
@@ -37,13 +50,17 @@
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="PropertiesComponent">
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/onlineshop/static/onlineshop" />
+    <property name="last_opened_file_path" value="D:/CargoGit/Cargo" />
+    <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
   </component>
   <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\MetaPlastic\metaplastik\onlineshop\templates\onlineshop" />
+    </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="D:\MetaPlastic\metaplastik\onlineshop\static\onlineshop" />
-      <recent name="D:\MetaPlastic\metaplastik\onlineshop\templates\onlineshop" />
       <recent name="D:\MetaPlastic\metaplastik\onlineshop\templates" />
+      <recent name="D:\MetaPlastic\metaplastik\onlineshop\templates\onlineshop" />
     </key>
   </component>
   <component name="RunDashboard">

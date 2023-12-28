@@ -5,7 +5,7 @@
     <meta name="keywords" content="Yeni Urun">
     <meta name="description" content="">
     <title>add_bottle</title>
-          {% load static %}
+    {% load static %}
 
     <link rel="stylesheet" href="{% static 'onlineshop/nicepage.css' %}" media="screen">
      <link rel="stylesheet" href="{% static 'onlineshop/add_bottle.css' %}" media="screen">
@@ -23,168 +23,273 @@
 		"@context": "http://schema.org",
 		"@type": "Organization",
 		"name": "",
-		"logo": "{% static 'onlineshop/images/gc34476ab4f72df5338bfe340243fc055995f0934459df7878a4cb09ef2c7a18ff81c09c4b55b521ba4bfed0304db55a9_1280.png' %}"
+		"logo": "{% static 'onlineshop/images/logo.png' %}"
 }</script>
     <meta name="theme-color" content="#1b356a">
     <meta property="og:title" content="add_bottle">
     <meta property="og:type" content="website">
   <meta data-intl-tel-input-cdn-path="intlTelInput/"></head>
-  <body class="u-body u-xl-mode" data-lang="ru">
-  <header class="u-clearfix u-header u-header" id="sec-cede"><div class="u-clearfix u-sheet u-valign-middle-lg u-valign-middle-md u-valign-middle-sm u-valign-middle-xs u-sheet-1">
-        <a href="{% url 'onlineshop:main_page' %}" class="u-image u-logo u-image-1" data-image-width="1280" data-image-height="1280">
-          <img src="{% static 'onlineshop/images/gc34476ab4f72df5338bfe340243fc055995f0934459df7878a4cb09ef2c7a18ff81c09c4b55b521ba4bfed0304db55a9_1280.png' %}" class="u-logo-image u-logo-image-1">
-        </a>
-        <h5 class="u-custom-font u-font-source-sans-pro u-text u-text-1">Meta Plastik</h5>
-        <nav class="u-menu u-menu-one-level u-offcanvas u-menu-1">
-          <div class="menu-collapse">
-            <a class="u-button-style u-nav-link" href="#">
-              <svg class="u-svg-link" viewBox="0 0 24 24"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#svg-f6ec"></use></svg>
-              <svg class="u-svg-content" version="1.1" id="svg-f6ec" viewBox="0 0 16 16" x="0px" y="0px" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.w3.org/2000/svg"><g><rect y="1" width="16" height="2"></rect><rect y="7" width="16" height="2"></rect><rect y="13" width="16" height="2"></rect>
+  <body class="u-body u-xl-mode" data-lang="ru"><header class="u-clearfix u-header u-header" id="sec-cede" data-animation-name="" data-animation-duration="0" data-animation-delay="0" data-animation-direction=""><a href="{% url 'onlineshop:main_page' %}" class="u-image u-logo u-image-1" data-image-width="1280" data-image-height="1280" title="-">
+        <img src="{% static 'onlineshop/images/logo.png' %}" class="u-logo-image u-logo-image-1">
+      </a><h5 class="u-custom-font u-font-source-sans-pro u-text u-text-1">Meta Plastik</h5><nav class="u-dropdown-icon u-menu u-menu-dropdown u-offcanvas u-menu-1" data-responsive-from="MD" data-submenu-level="on-click">
+        <div class="menu-collapse">
+          <a class="u-button-style u-nav-link" href="#">
+            <svg class="u-svg-link" viewBox="0 0 24 24"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#svg-f6ec"></use></svg>
+            <svg class="u-svg-content" version="1.1" id="svg-f6ec" viewBox="0 0 16 16" x="0px" y="0px" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.w3.org/2000/svg"><g><rect y="1" width="16" height="2"></rect><rect y="7" width="16" height="2"></rect><rect y="13" width="16" height="2"></rect>
 </g></svg>
-            </a>
-          </div>
-          <div class="u-custom-menu u-nav-container">
-            <ul class="u-nav u-unstyled"><li class="u-nav-item"><a class="u-button-style u-nav-link" href="{% url 'onlineshop:main_page' %}">ANASAYFA</a>
-</li><li class="u-nav-item"><a class="u-button-style u-nav-link" href="Products.html">ÜRÜNLER</a>
-</li><li class="u-nav-item"><a class="u-button-style u-nav-link" href="#">HAKKIMIZDA</a>
-</li><li class="u-nav-item"><a class="u-button-style u-nav-link" href="contacts.html">İLETİŞİM</a>
+          </a>
+        </div>
+        <div class="u-custom-menu u-nav-container">
+          <ul class="u-nav u-unstyled"><li class="u-nav-item"><a class="u-button-style u-nav-link" href="{% url 'onlineshop:main_page' %}">ANASAYFA</a>
+</li><li class="u-nav-item"><a class="u-button-style u-nav-link" href="{% url 'onlineshop:all_products' %}">ÜRÜNLER</a><div class="u-nav-popup"><ul class="u-h-spacing-20 u-nav u-unstyled u-v-spacing-10"><li class="u-nav-item"><a class="u-button-style u-nav-link u-white" href="{% url 'onlineshop:get_list_by_main_type' 'PET\PE\PP ÜRÜNLER' %}">PET\PE\PP ÜRÜNLER</a><div class="u-nav-popup"><ul class="u-h-spacing-20 u-nav u-unstyled u-v-spacing-10"><li class="u-nav-item"><a class="u-button-style u-nav-link u-white" href="{% url 'onlineshop:get_list_by_sub_type' 'Pet Şişeler' %}">Pet Şişeler</a>
+</li><li class="u-nav-item"><a class="u-button-style u-nav-link u-white" href="{% url 'onlineshop:get_list_by_sub_type' 'Polietılen Şişeler' %}">Polietılen Şişeler</a>
+</li><li class="u-nav-item"><a class="u-button-style u-nav-link u-white" href="{% url 'onlineshop:get_list_by_sub_type' 'Tarım ve Kımyevı Şişeler' %}">Tarım ve Kımyevı Şişeler</a>
+</li><li class="u-nav-item"><a class="u-button-style u-nav-link u-white" href="{% url 'onlineshop:get_list_by_sub_type' 'Kartuş Kapaklı Şişeler' %}">Kartuş Kapaklı Şişeler</a>
+</li><li class="u-nav-item"><a class="u-button-style u-nav-link u-white" href="{% url 'onlineshop:get_list_by_sub_type' 'Tablet Kapsül ve İlaç Şişeleri' %}">Tablet Kapsül ve İlaç Şişeleri</a>
+</li><li class="u-nav-item"><a class="u-button-style u-nav-link u-white" href="{% url 'onlineshop:get_list_by_sub_type' 'Damlalıklı Likit Şişeler' %}">Damlalıklı Likit Şişeler</a>
+</li><li class="u-nav-item"><a class="u-button-style u-nav-link u-white" href="{% url 'onlineshop:get_list_by_sub_type' 'Pisetler' %}">Pisetler</a>
+</li><li class="u-nav-item"><a class="u-button-style u-nav-link u-white" href="{% url 'onlineshop:get_list_by_sub_type' 'Şampuan Şişeleri' %}">Şampuan Şişeleri</a>
 </li></ul>
-          </div>
-          <div class="u-custom-menu u-nav-container-collapse">
-            <div class="u-black u-container-style u-inner-container-layout u-opacity u-opacity-95 u-sidenav">
-              <div class="u-inner-container-layout u-sidenav-overflow">
-                <div class="u-menu-close"></div>
-                <ul class="u-align-center u-nav u-popupmenu-items u-unstyled u-nav-2"><li class="u-nav-item"><a class="u-button-style u-nav-link" href="main.html">ANASAYFA</a>
-</li><li class="u-nav-item"><a class="u-button-style u-nav-link" href="Products.html">ÜRÜNLER</a>
-</li><li class="u-nav-item"><a class="u-button-style u-nav-link" href="#">HAKKIMIZDA</a>
-</li><li class="u-nav-item"><a class="u-button-style u-nav-link" href="contacts.html">İLETİŞİM</a>
+</div>
+</li><li class="u-nav-item"><a class="u-button-style u-nav-link u-white">CAM ÜRÜNLER</a><div class="u-nav-popup"><ul class="u-h-spacing-20 u-nav u-unstyled u-v-spacing-10"><li class="u-nav-item"><a class="u-button-style u-nav-link u-white" href="{% url 'onlineshop:get_list_by_sub_type' 'Dropper Şişeler' %}">Dropper Şişeler</a>
+</li><li class="u-nav-item"><a class="u-button-style u-nav-link u-white" href="{% url 'onlineshop:get_list_by_sub_type' 'Tablet Şişeler' %}">Tablet Şişeler</a>
+</li><li class="u-nav-item"><a class="u-button-style u-nav-link u-white" href="{% url 'onlineshop:get_list_by_sub_type' 'Flakon ve Penisilin Şişeler' %}">Flakon ve Penisilin Şişeler</a>
+</li><li class="u-nav-item"><a class="u-button-style u-nav-link u-white" href="{% url 'onlineshop:get_list_by_sub_type' 'Cam Beherler' %}">Cam Beherler</a>
+</li><li class="u-nav-item"><a class="u-button-style u-nav-link u-white" href="{% url 'onlineshop:get_list_by_sub_type' 'Ecza Şişeler' %}">Ecza Şişeler</a>
+</li><li class="u-nav-item"><a class="u-button-style u-nav-link u-white" href="{% url 'onlineshop:get_list_by_sub_type' 'Yağ Şişeler' %}">Yağ Şişeler</a>
+</li><li class="u-nav-item"><a class="u-button-style u-nav-link u-white" href="{% url 'onlineshop:get_list_by_sub_type' 'Airless Şişeler' %}">Airless Şişeler</a>
+</li><li class="u-nav-item"><a class="u-button-style u-nav-link u-white" href="{% url 'onlineshop:get_list_by_sub_type' 'Cam Kozmetik Kavanozları' %}">Cam Kozmetik Kavanozları</a>
 </li></ul>
-              </div>
+</div>
+</li><li class="u-nav-item"><a class="u-button-style u-nav-link u-white">KAVANOZ/BİDON/KOVA/BEHER</a><div class="u-nav-popup"><ul class="u-h-spacing-20 u-nav u-unstyled u-v-spacing-10"><li class="u-nav-item"><a class="u-button-style u-nav-link u-white" href="{% url 'onlineshop:get_list_by_sub_type' 'PET Kavanozlar' %}">PET Kavanozlar</a>
+</li><li class="u-nav-item"><a class="u-button-style u-nav-link u-white" href="{% url 'onlineshop:get_list_by_sub_type' 'PE\PP Kavanozlar' %}">PE\PP Kavanozlar</a>
+</li><li class="u-nav-item"><a class="u-button-style u-nav-link u-white" href="{% url 'onlineshop:get_list_by_sub_type' 'Pomat Kutuları' %}">Pomat Kutuları</a>
+</li><li class="u-nav-item"><a class="u-button-style u-nav-link u-white" href="{% url 'onlineshop:get_list_by_sub_type' 'Sporcu Gıda Kavanozları' %}">Sporcu Gıda Kavanozları</a>
+</li><li class="u-nav-item"><a class="u-button-style u-nav-link u-white" href="{% url 'onlineshop:get_list_by_sub_type' 'Çanta Bidonlar' %}">Çanta Bidonlar</a>
+</li><li class="u-nav-item"><a class="u-button-style u-nav-link u-white" href="{% url 'onlineshop:get_list_by_sub_type' 'Çemberli Bidonlar' %}">Çemberli Bidonlar</a>
+</li><li class="u-nav-item"><a class="u-button-style u-nav-link u-white" href="{% url 'onlineshop:get_list_by_sub_type' 'Plastik Beherler' %}">Plastik Beherler</a>
+</li><li class="u-nav-item"><a class="u-button-style u-nav-link u-white" href="{% url 'onlineshop:get_list_by_sub_type' 'Saklama Kabları ve Kovalar' %}">Saklama Kabları ve Kovalar</a>
+</li></ul>
+</div>
+</li><li class="u-nav-item"><a class="u-button-style u-nav-link u-white">AKSESUARLAR</a><div class="u-nav-popup"><ul class="u-h-spacing-20 u-nav u-unstyled u-v-spacing-10"><li class="u-nav-item"><a class="u-button-style u-nav-link u-white" href="{% url 'onlineshop:get_list_by_sub_type' 'Contalar' %}">Contalar</a>
+</li><li class="u-nav-item"><a class="u-button-style u-nav-link u-white" href="{% url 'onlineshop:get_list_by_sub_type' 'Damlalıklar' %}">Damlalıklar</a>
+</li><li class="u-nav-item"><a class="u-button-style u-nav-link u-white" href="{% url 'onlineshop:get_list_by_sub_type' 'Huniler' %}">Huniler</a>
+</li><li class="u-nav-item"><a class="u-button-style u-nav-link u-white" href="{% url 'onlineshop:get_list_by_sub_type' 'Kapaklar' %}">Kapaklar</a>
+</li><li class="u-nav-item"><a class="u-button-style u-nav-link u-white" href="{% url 'onlineshop:get_list_by_sub_type' 'Kaşık Ölçekler' %}">Kaşık Ölçekler</a>
+</li><li class="u-nav-item"><a class="u-button-style u-nav-link u-white" href="{% url 'onlineshop:get_list_by_sub_type' 'Kulpsuz Ölçekler' %}">Kulpsuz Ölçekler</a>
+</li><li class="u-nav-item"><a class="u-button-style u-nav-link u-white" href="{% url 'onlineshop:get_list_by_sub_type' 'Parmak Spreyler' %}">Parmak Spreyler</a>
+</li><li class="u-nav-item"><a class="u-button-style u-nav-link u-white" href="{% url 'onlineshop:get_list_by_sub_type' 'Pompalar' %}">Pompalar</a>
+</li><li class="u-nav-item"><a class="u-button-style u-nav-link u-white" href="{% url 'onlineshop:get_list_by_sub_type' 'Tetikli Püskürtücüler' %}">Tetikli Püskürtücüler</a>
+</li><li class="u-nav-item"><a class="u-button-style u-nav-link u-white" href="{% url 'onlineshop:get_list_by_sub_type' 'Tıpalar' %}">Tıpalar</a>
+</li></ul>
+</div>
+</li></ul>
+</div>
+</li><li class="u-nav-item"><a class="u-button-style u-nav-link" href="{% url 'onlineshop:add_bottle' %}">HAKKIMIZDA</a>
+</li><li class="u-nav-item"><a class="u-button-style u-nav-link" href="{% url 'onlineshop:main_page' %}">İLETİŞİM</a>
+</li></ul>
+        </div>
+        <div class="u-custom-menu u-nav-container-collapse">
+          <div class="u-black u-container-style u-inner-container-layout u-opacity u-opacity-95 u-sidenav u-sidenav-1" data-offcanvas-width="325">
+            <div class="u-inner-container-layout u-sidenav-overflow">
+              <div class="u-menu-close"></div>
+              <ul class="u-align-center u-nav u-popupmenu-items u-unstyled u-nav-7"><li class="u-nav-item"><a class="u-button-style u-nav-link" href="{% url 'onlineshop:main_page' %}">ANASAYFA</a>
+</li><li class="u-nav-item"><a class="u-button-style u-nav-link" href="{% url 'onlineshop:all_products' %}">ÜRÜNLER</a><div class="u-nav-popup"><ul class="u-h-spacing-20 u-nav u-unstyled u-v-spacing-10"><li class="u-nav-item"><a class="u-button-style u-nav-link" href="{% url 'onlineshop:get_list_by_main_type' 'PET\PE\PP ÜRÜNLER' %}">PET\PE\PP ÜRÜNLER</a><div class="u-nav-popup"><ul class="u-h-spacing-20 u-nav u-unstyled u-v-spacing-10"><li class="u-nav-item"><a class="u-button-style u-nav-link" href="{% url 'onlineshop:get_list_by_sub_type' 'Pet Şişeler' %}">Pet Şişeler</a>
+</li><li class="u-nav-item"><a class="u-button-style u-nav-link" href="{% url 'onlineshop:get_list_by_sub_type' 'Polietılen Şişeler' %}">Polietılen Şişeler</a>
+</li><li class="u-nav-item"><a class="u-button-style u-nav-link" href="{% url 'onlineshop:get_list_by_sub_type' 'Tarım ve Kımyevı Şişeler' %}">Tarım ve Kımyevı Şişeler</a>
+</li><li class="u-nav-item"><a class="u-button-style u-nav-link" href="{% url 'onlineshop:get_list_by_sub_type' 'Kartuş Kapaklı Şişeler' %}">Kartuş Kapaklı Şişeler</a>
+</li><li class="u-nav-item"><a class="u-button-style u-nav-link" href="{% url 'onlineshop:get_list_by_sub_type' 'Tablet Kapsül ve İlaç Şişeleri' %}">Tablet Kapsül ve İlaç Şişeleri</a>
+</li><li class="u-nav-item"><a class="u-button-style u-nav-link" href="{% url 'onlineshop:get_list_by_sub_type' 'Damlalıklı Likit Şişeler' %}">Damlalıklı Likit Şişeler</a>
+</li><li class="u-nav-item"><a class="u-button-style u-nav-link" href="{% url 'onlineshop:get_list_by_sub_type' 'Pisetler' %}">Pisetler</a>
+</li><li class="u-nav-item"><a class="u-button-style u-nav-link" href="{% url 'onlineshop:get_list_by_sub_type' 'Şampuan Şişeleri' %}">Şampuan Şişeleri</a>
+</li></ul>
+</div>
+</li><li class="u-nav-item"><a class="u-button-style u-nav-link">CAM ÜRÜNLER</a><div class="u-nav-popup"><ul class="u-h-spacing-20 u-nav u-unstyled u-v-spacing-10"><li class="u-nav-item"><a class="u-button-style u-nav-link" href="{% url 'onlineshop:get_list_by_sub_type' 'Dropper Şişeler' %}">Dropper Şişeler</a>
+</li><li class="u-nav-item"><a class="u-button-style u-nav-link" href="{% url 'onlineshop:get_list_by_sub_type' 'Tablet Şişeler' %}">Tablet Şişeler</a>
+</li><li class="u-nav-item"><a class="u-button-style u-nav-link" href="{% url 'onlineshop:get_list_by_sub_type' 'Flakon ve Penisilin Şişeler' %}">Flakon ve Penisilin Şişeler</a>
+</li><li class="u-nav-item"><a class="u-button-style u-nav-link" href="{% url 'onlineshop:get_list_by_sub_type' 'Cam Beherler' %}">Cam Beherler</a>
+</li><li class="u-nav-item"><a class="u-button-style u-nav-link" href="{% url 'onlineshop:get_list_by_sub_type' 'Ecza Şişeler' %}">Ecza Şişeler</a>
+</li><li class="u-nav-item"><a class="u-button-style u-nav-link" href="{% url 'onlineshop:get_list_by_sub_type' 'Yağ Şişeler' %}">Yağ Şişeler</a>
+</li><li class="u-nav-item"><a class="u-button-style u-nav-link" href="{% url 'onlineshop:get_list_by_sub_type' 'Airless Şişeler' %}">Airless Şişeler</a>
+</li><li class="u-nav-item"><a class="u-button-style u-nav-link" href="{% url 'onlineshop:get_list_by_sub_type' 'Cam Kozmetik Kavanozları' %}">Cam Kozmetik Kavanozları</a>
+</li></ul>
+</div>
+</li><li class="u-nav-item"><a class="u-button-style u-nav-link">KAVANOZ/BİDON/KOVA/BEHER</a><div class="u-nav-popup"><ul class="u-h-spacing-20 u-nav u-unstyled u-v-spacing-10"><li class="u-nav-item"><a class="u-button-style u-nav-link" href="{% url 'onlineshop:get_list_by_sub_type' 'PET Kavanozlar' %}">PET Kavanozlar</a>
+</li><li class="u-nav-item"><a class="u-button-style u-nav-link" href="{% url 'onlineshop:get_list_by_sub_type' 'PE\PP Kavanozlar' %}">PE\PP Kavanozlar</a>
+</li><li class="u-nav-item"><a class="u-button-style u-nav-link" href="{% url 'onlineshop:get_list_by_sub_type' 'Pomat Kutuları' %}">Pomat Kutuları</a>
+</li><li class="u-nav-item"><a class="u-button-style u-nav-link" href="{% url 'onlineshop:get_list_by_sub_type' 'Sporcu Gıda Kavanozları' %}">Sporcu Gıda Kavanozları</a>
+</li><li class="u-nav-item"><a class="u-button-style u-nav-link" href="{% url 'onlineshop:get_list_by_sub_type' 'Çanta Bidonlar' %}">Çanta Bidonlar</a>
+</li><li class="u-nav-item"><a class="u-button-style u-nav-link" href="{% url 'onlineshop:get_list_by_sub_type' 'Çemberli Bidonlar' %}">Çemberli Bidonlar</a>
+</li><li class="u-nav-item"><a class="u-button-style u-nav-link" href="{% url 'onlineshop:get_list_by_sub_type' 'Plastik Beherler' %}">Plastik Beherler</a>
+</li><li class="u-nav-item"><a class="u-button-style u-nav-link" href="{% url 'onlineshop:get_list_by_sub_type' 'Saklama Kabları ve Kovalar' %}">Saklama Kabları ve Kovalar</a>
+</li></ul>
+</div>
+</li><li class="u-nav-item"><a class="u-button-style u-nav-link">AKSESUARLAR</a><div class="u-nav-popup"><ul class="u-h-spacing-20 u-nav u-unstyled u-v-spacing-10"><li class="u-nav-item"><a class="u-button-style u-nav-link" href="{% url 'onlineshop:get_list_by_sub_type' 'Contalar' %}">Contalar</a>
+</li><li class="u-nav-item"><a class="u-button-style u-nav-link" href="{% url 'onlineshop:get_list_by_sub_type' 'Damlalıklar' %}">Damlalıklar</a>
+</li><li class="u-nav-item"><a class="u-button-style u-nav-link" href="{% url 'onlineshop:get_list_by_sub_type' 'Huniler' %}">Huniler</a>
+</li><li class="u-nav-item"><a class="u-button-style u-nav-link" href="{% url 'onlineshop:get_list_by_sub_type' 'Kapaklar' %}">Kapaklar</a>
+</li><li class="u-nav-item"><a class="u-button-style u-nav-link" href="{% url 'onlineshop:get_list_by_sub_type' 'Kaşık Ölçekler' %}">Kaşık Ölçekler</a>
+</li><li class="u-nav-item"><a class="u-button-style u-nav-link" href="{% url 'onlineshop:get_list_by_sub_type' 'Kulpsuz Ölçekler' %}">Kulpsuz Ölçekler</a>
+</li><li class="u-nav-item"><a class="u-button-style u-nav-link" href="{% url 'onlineshop:get_list_by_sub_type' 'Parmak Spreyler' %}">Parmak Spreyler</a>
+</li><li class="u-nav-item"><a class="u-button-style u-nav-link" href="{% url 'onlineshop:get_list_by_sub_type' 'Pompalar' %}">Pompalar</a>
+</li><li class="u-nav-item"><a class="u-button-style u-nav-link" href="{% url 'onlineshop:get_list_by_sub_type' 'Tetikli Püskürtücüler' %}">Tetikli Püskürtücüler</a>
+</li><li class="u-nav-item"><a class="u-button-style u-nav-link" href="{% url 'onlineshop:get_list_by_sub_type' 'Tıpalar' %}">Tıpalar</a>
+</li></ul>
+</div>
+</li></ul>
+</div>
+</li><li class="u-nav-item"><a class="u-button-style u-nav-link" href="{% url 'onlineshop:add_bottle' %}">HAKKIMIZDA</a>
+</li><li class="u-nav-item"><a class="u-button-style u-nav-link" href="{% url 'onlineshop:main_page' %}">İLETİŞİM</a>
+</li></ul>
             </div>
-            <div class="u-black u-menu-overlay u-opacity u-opacity-70"></div>
           </div>
-        </nav>
-      </div></header>
-
-
-  <section class="u-align-center u-clearfix u-grey-5 u-section-1" id="sec-0f9d">
+          <div class="u-black u-menu-overlay u-opacity u-opacity-70"></div>
+        </div>
+      </nav><div class="u-border-3 u-border-grey-dark-1 u-expanded-width u-hidden-xs u-line u-line-horizontal u-line-1"></div></header>
+    <section class="u-align-center u-clearfix u-grey-5 u-section-1" id="sec-0f9d">
       <div class="u-clearfix u-sheet u-valign-middle u-sheet-1">
-
         <h1 class="u-text u-text-default u-text-1">Yeni Urun</h1>
-
         <div class="u-form u-form-1">
-          <form action="{% url 'onlineshop:create_bottle' %}"  style="padding: 10px"  name="form" method="post">
-                          {% csrf_token %}
+          <form action="{% url 'onlineshop:create_bottle' %}"  style="padding: 10px"  name="form" method="post" enctype="multipart/form-data">
+                                      {% csrf_token %}
 
             <div class="u-form-group u-form-name u-label-top">
               <label for="name-3b9a" class="u-label">Ürün kodu</label>
-              <input type="text" placeholder="Bottle Code" id="name-3b9a" name="bottle_code" class="u-border-2 u-border-black u-border-no-left u-border-no-right u-border-no-top u-input u-input-rectangle u-input-1" required="">
+              <input type="text" id="name-3b9a" name="bottle_code" class="u-border-2 u-border-black u-border-no-left u-border-no-right u-border-no-top u-input u-input-rectangle u-input-1" required="">
             </div>
-             <br>
-            <div class="u-form-group u-form-select u-label-top u-form-group-2">
+            <br>
+            <div class="u-form-group u-label-top u-form-group-2">
+              <label for="text-7312" class="u-label">Referans Kodu</label>
+              <input type="text" id="text-7312" name="refer_code" class="u-border-2 u-border-black u-border-no-left u-border-no-right u-border-no-top u-input u-input-rectangle u-input-2">
+            </div>
+            <br>
+            <div class="u-form-group u-form-select u-label-top u-form-group-3">
               <label for="select-ec83" class="u-label">Ürün tipi</label>
               <div class="u-form-select-wrapper">
-                <select id="select-ec83" name="main_type" class="u-border-2 u-border-black u-border-no-left u-border-no-right u-border-no-top u-input u-input-rectangle u-input-2">
-                  <option value="Plastik" data-calc="Plastik">PET/PE/PP ürünler</option>
-                  <option value="glass" data-calc="glass">CAM ürünler</option>
-                  <option value="containers" data-calc="containers">KAVANOZ/BIDON/KOVA/BEHER</option>
-                  <option data-calc="aksesuar" value="aksesuar">AKSESUARLAR</option>
+                <select id="select-ec83" name="main_type" class="u-border-2 u-border-black u-border-no-left u-border-no-right u-border-no-top u-input u-input-rectangle u-input-3">
+                  <option value="PET\PE\PP ÜRUNLER" data-calc="PET\PE\PP ÜRUNLER">PET\PE\PP ÜRUNLER</option>
+                  <option value="CAM ÜRUNLER" data-calc="CAM ÜRUNLER" selected="selected">CAM ÜRUNLER</option>
+                  <option value="KAVANOZ\BIDON\KOVA\BEHER" data-calc="KAVANOZ\BIDON\KOVA\BEHER">KAVANOZ\BIDON\KOVA\BEHER</option>
+                  <option data-calc="AKSESUARLAR" value="AKSESUARLAR">AKSESUARLAR</option>
+                </select>
+                <svg class="u-caret u-caret-svg" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="16px" height="16px" viewBox="0 0 16 16" style="fill:currentColor;" xml:space="preserve"><polygon class="st0" points="8,12 2,4 14,4 "></polygon></svg>
+              </div>
+            </div>
+              <br>
+            <div class="u-form-group u-form-select u-label-top u-form-group-4" data-dependency="[{&quot;action&quot;:&quot;show&quot;,&quot;field&quot;:&quot;main_type&quot;,&quot;condition&quot;:&quot;equal&quot;,&quot;value&quot;:&quot;PET\\PE\\PP ÜRUNLER&quot;}]">
+              <label for="select-37c8" class="u-label">Ürün tipi PET</label>
+              <div class="u-form-select-wrapper">
+                <select id="select-37c8" name="sub_type1" class="u-border-2 u-border-black u-border-no-left u-border-no-right u-border-no-top u-input u-input-rectangle u-input-4">
+                  <option value="Pet Şişeler" data-calc="Pet Şişeler" selected="selected">Pet Şişeler</option>
+                  <option value="Polietılen Şişeler" data-calc="Polietılen Şişeler">Polietılen Şişeler</option>
+                  <option value="Tarım ve Kımyevı Şişeler" data-calc="Tarım ve Kımyevı Şişeler">Tarım ve Kımyevı Şişeler</option>
+                  <option data-calc="Tablet Kapsül ve İlaç Şişeleri" value="Tablet Kapsül ve İlaç Şişeleri">Tablet Kapsül ve İlaç Şişeleri</option>
+                  <option data-calc="Damlalıklı Likit Şişeler" value="Damlalıklı Likit Şişeler">Damlalıklı Likit Şişeler</option>
+                  <option data-calc="Pisetler" value="Pisetler">Pisetler</option>
+                  <option data-calc="Şampuan Şişeleri" value="Şampuan Şişeleri">Şampuan Şişeleri</option>
+                </select>
+                <svg class="u-caret u-caret-svg" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="16px" height="16px" viewBox="0 0 16 16" style="fill:currentColor;" xml:space="preserve"><polygon class="st0" points="8,12 2,4 14,4 "></polygon></svg>
+              </div>
+            </div>
+              <br>
+            <div class="u-form-group u-form-select u-label-top u-form-group-5" data-dependency="[{&quot;action&quot;:&quot;show&quot;,&quot;field&quot;:&quot;main_type&quot;,&quot;condition&quot;:&quot;equal&quot;,&quot;value&quot;:&quot;CAM ÜRUNLER&quot;}]">
+              <label for="select-9a46" class="u-label">Ürün tipi Cam</label>
+              <div class="u-form-select-wrapper">
+                <select id="select-9a46" name="sub_type2" class="u-border-2 u-border-black u-border-no-left u-border-no-right u-border-no-top u-input u-input-rectangle u-input-5">
+                  <option value="Dropper Şişeler" data-calc="Dropper Şişeler" selected="selected">Dropper Şişeler</option>
+                  <option value="Tablet Şişeler" data-calc="Tablet Şişeler">Tablet Şişeler</option>
+                  <option value="Flakon ve Penisilin Şişeler" data-calc="Flakon ve Penisilin Şişeler">Flakon ve Penisilin Şişeler</option>
+                  <option data-calc="Cam Beherler" value="Cam Beherler">Cam Beherler</option>
+                  <option data-calc="Ecza Şişeler" value="Ecza Şişeler">Ecza Şişeler</option>
+                  <option data-calc="Yağ Şişeler" value="Yağ Şişeler">Yağ Şişeler</option>
+                  <option data-calc="Airless Şişeler" value="Airless Şişeler">Airless Şişeler</option>
+                  <option data-calc="Cam Kozmetik Kavanozları" value="Cam Kozmetik Kavanozları">Cam Kozmetik Kavanozları</option>
+                </select>
+                <svg class="u-caret u-caret-svg" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="16px" height="16px" viewBox="0 0 16 16" style="fill:currentColor;" xml:space="preserve"><polygon class="st0" points="8,12 2,4 14,4 "></polygon></svg>
+              </div>
+            </div>
+              <br>
+            <div class="u-form-group u-form-select u-label-top u-form-group-6" data-dependency="[{&quot;action&quot;:&quot;show&quot;,&quot;field&quot;:&quot;main_type&quot;,&quot;condition&quot;:&quot;equal&quot;,&quot;value&quot;:&quot;KAVANOZ\\BIDON\\KOVA\\BEHER&quot;}]">
+              <label for="select-9d06" class="u-label">Ürün tipi Kavanoz</label>
+              <div class="u-form-select-wrapper">
+                <select id="select-9d06" name="sub_type3" class="u-border-2 u-border-black u-border-no-left u-border-no-right u-border-no-top u-input u-input-rectangle u-input-6">
+                  <option data-calc="PET Kavanozlar" value="PET Kavanozlar" selected="selected">PET Kavanozlar</option>
+                  <option data-calc="PE\PP Kavanozlar" value="PE\PP Kavanozlar">PE\PP Kavanozlar</option>
+                  <option data-calc="Pomat Kutuları" value="Pomat Kutuları">Pomat Kutuları</option>
+                  <option data-calc="Sporcu Gıda Kavanozları" value="Sporcu Gıda Kavanozları">Sporcu Gıda Kavanozları</option>
+                  <option data-calc="Çanta Bidonlar" value="Çanta Bidonlar">Çanta Bidonlar</option>
+                  <option data-calc="Çemberli Bidonlar" value="Çemberli Bidonlar">Çemberli Bidonlar</option>
+                  <option data-calc="Plastik Beherler" value="Plastik Beherler">Plastik Beherler</option>
+                  <option data-calc="Saklama Kabları ve Kovalar" value="Saklama Kabları ve Kovalar">Saklama Kabları ve Kovalar</option>
+                </select>
+                <svg class="u-caret u-caret-svg" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="16px" height="16px" viewBox="0 0 16 16" style="fill:currentColor;" xml:space="preserve"><polygon class="st0" points="8,12 2,4 14,4 "></polygon></svg>
+              </div>
+            </div>
+              <br>
+            <div class="u-form-group u-form-select u-label-top u-form-group-7" data-dependency="[{&quot;action&quot;:&quot;show&quot;,&quot;field&quot;:&quot;main_type&quot;,&quot;condition&quot;:&quot;equal&quot;,&quot;value&quot;:&quot;AKSESUARLAR&quot;}]">
+              <label for="select-d224" class="u-label">Ürün tipi Aksesuar</label>
+              <div class="u-form-select-wrapper">
+                <select id="select-d224" name="sub_type4" class="u-border-2 u-border-black u-border-no-left u-border-no-right u-border-no-top u-input u-input-rectangle u-input-7">
+                  <option value="Contalar" data-calc="Contalar" selected="selected">Contalar</option>
+                  <option data-calc="Damlalıklar" value="Damlalıklar">Damlalıklar</option>
+                  <option data-calc="Huniler" value="Huniler">Huniler</option>
+                  <option data-calc="Kapaklar" value="Kapaklar">Kapaklar</option>
+                  <option data-calc="Kaşık Ölçekler" value="Kaşık Ölçekler">Kaşık Ölçekler</option>
+                  <option data-calc="Kulpsuz Ölçekler" value="Kulpsuz Ölçekler">Kulpsuz Ölçekler</option>
+                  <option data-calc="Parmak Spreyler" value="Parmak Spreyler">Parmak Spreyler</option>
+                  <option data-calc="Pompalar" value="Pompalar">Pompalar</option>
+                  <option data-calc="Tetikli Püskürtücüler" value="Tetikli Püskürtücüler">Tetikli Püskürtücüler</option>
+                  <option data-calc="Tıpalar" value="Tıpalar">Tıpalar</option>
                 </select>
                 <svg class="u-caret u-caret-svg" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="16px" height="16px" viewBox="0 0 16 16" style="fill:currentColor;" xml:space="preserve"><polygon class="st0" points="8,12 2,4 14,4 "></polygon></svg>
               </div>
             </div>
             <br>
-            <div class="u-form-group u-form-select u-label-top u-form-group-3" data-dependency="[{&quot;action&quot;:&quot;show&quot;,&quot;field&quot;:&quot;main_type&quot;,&quot;condition&quot;:&quot;equal&quot;,&quot;value&quot;:&quot;Plastik&quot;}]">
-              <label for="select-37c8" class="u-label">Urun tipi PET</label>
-              <div class="u-form-select-wrapper">
-                <select id="select-37c8" name="sub_type1" class="u-border-2 u-border-black u-border-no-left u-border-no-right u-border-no-top u-input u-input-rectangle u-input-3">
-                  <option value="Pet Siseler" data-calc="Pet Siseler">Pet Siseler</option>
-                  <option value="Politilen SIseler" data-calc="">Politilen SIseler</option>
-                  <option value="Item 3" data-calc="">Item 3</option>
-                </select>
-                <svg class="u-caret u-caret-svg" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="16px" height="16px" viewBox="0 0 16 16" style="fill:currentColor;" xml:space="preserve"><polygon class="st0" points="8,12 2,4 14,4 "></polygon></svg>
-              </div>
-            </div>
-
-
-              <div class="u-form-group u-form-select u-label-top u-form-group-4" data-dependency="[{&quot;action&quot;:&quot;show&quot;,&quot;field&quot;:&quot;main_type&quot;,&quot;condition&quot;:&quot;equal&quot;,&quot;value&quot;:&quot;glass&quot;}]">
-              <label for="select-9a46" class="u-label">Urun tipi Cam</label>
-              <div class="u-form-select-wrapper">
-                <select id="select-9a46" name="sub_type2" class="u-border-2 u-border-black u-border-no-left u-border-no-right u-border-no-top u-input u-input-rectangle u-input-4">
-                  <option value="Dropper Siseler" data-calc="">Dropper Siseler</option>
-                  <option value="Tablet Siseler" data-calc="">Tablet Siseler</option>
-                  <option value="Item 3" data-calc="">Item 3</option>
-                </select>
-                <svg class="u-caret u-caret-svg" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="16px" height="16px" viewBox="0 0 16 16" style="fill:currentColor;" xml:space="preserve"><polygon class="st0" points="8,12 2,4 14,4 "></polygon></svg>
-              </div>
-            </div>
-
-              <div class="u-form-group u-form-select u-label-top u-form-group-5" data-dependency="[{&quot;action&quot;:&quot;show&quot;,&quot;field&quot;:&quot;main_type&quot;,&quot;condition&quot;:&quot;equal&quot;,&quot;value&quot;:&quot;containers&quot;}]">
-              <label for="select-9d06" class="u-label">Urun tipi Kavanoz</label>
-              <div class="u-form-select-wrapper">
-                <select id="select-9d06" name="sub_type3" class="u-border-2 u-border-black u-border-no-left u-border-no-right u-border-no-top u-input u-input-rectangle u-input-5">
-                  <option value="PET Kavanoz" data-calc="">PET Kavanoz</option>
-                  <option value="Pomat Kutulari" data-calc="">Pomat Kutulari</option>
-                  <option value="Item 3" data-calc="">Item 3</option>
-                </select>
-                <svg class="u-caret u-caret-svg" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="16px" height="16px" viewBox="0 0 16 16" style="fill:currentColor;" xml:space="preserve"><polygon class="st0" points="8,12 2,4 14,4 "></polygon></svg>
-              </div>
-            </div>
-
-              <div class="u-form-group u-form-select u-label-top u-form-group-6" data-dependency="[{&quot;action&quot;:&quot;show&quot;,&quot;field&quot;:&quot;main_type&quot;,&quot;condition&quot;:&quot;equal&quot;,&quot;value&quot;:&quot;aksesuar&quot;}]">
-              <label for="select-d224" class="u-label">Urun tipi Aksesuar</label>
-              <div class="u-form-select-wrapper">
-                <select id="select-d224" name="sub_type4" class="u-border-2 u-border-black u-border-no-left u-border-no-right u-border-no-top u-input u-input-rectangle u-input-6">
-                  <option value="Contalar" data-calc="">Contalar</option>
-                  <option value="Item 2" data-calc="">Item 2</option>
-                  <option value="Item 3" data-calc="">Item 3</option>
-                </select>
-                <svg class="u-caret u-caret-svg" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="16px" height="16px" viewBox="0 0 16 16" style="fill:currentColor;" xml:space="preserve"><polygon class="st0" points="8,12 2,4 14,4 "></polygon></svg>
-              </div>
-            </div>
-               <br>
-              <div class="u-form-group u-form-number u-form-number-layout-number u-label-top u-form-group-7">
+            <div class="u-form-group u-form-number u-form-number-layout-number u-label-top u-form-group-8">
               <label for="number-0d6a" class="u-label">Ağırlık</label>
-              <div class="u-input-row" data-value="0">
-                <input value="" min="0" max="100" step="1" type="number" placeholder="" id="number-0d6a" name="weigth" class="u-border-2 u-border-black u-border-no-left u-border-no-right u-border-no-top u-input u-input-rectangle u-text-black u-input-7">
+              <div class="u-input-row" data-value="">
+                <input min="" max="10000" step="1" type="number" placeholder="" id="number-0d6a" name="weight" class="u-border-2 u-border-black u-border-no-left u-border-no-right u-border-no-top u-input u-input-rectangle u-text-black u-input-8">
               </div>
             </div>
-              <br>
-              <div class="u-form-group u-form-number u-form-number-layout-number u-label-top u-form-group-8">
+            <br>
+            <div class="u-form-group u-form-number u-form-number-layout-number u-label-top u-form-group-9">
               <label for="number-cf5d" class="u-label">Genişlik</label>
               <div class="u-input-row" data-value="0">
-                <input value="" min="0" max="100" step="1" type="number" placeholder="" id="number-cf5d" name="width" class="u-border-2 u-border-black u-border-no-left u-border-no-right u-border-no-top u-input u-input-rectangle u-text-black u-input-8">
+                <input min="0" max="10000" step="1" type="number" placeholder="" id="number-cf5d" name="width" class="u-border-2 u-border-black u-border-no-left u-border-no-right u-border-no-top u-input u-input-rectangle u-text-black u-input-9" value="">
               </div>
             </div>
-               <br>
-              <div class="u-form-group u-form-number u-form-number-layout-number u-label-top u-form-group-9">
+            <br>
+            <div class="u-form-group u-form-number u-form-number-layout-number u-label-top u-form-group-10">
               <label for="number-9237" class="u-label">Yükseklik</label>
               <div class="u-input-row" data-value="0">
-                <input value="" min="0" max="100" step="1" type="number" placeholder="" id="number-9237" name="height" class="u-border-2 u-border-black u-border-no-left u-border-no-right u-border-no-top u-input u-input-rectangle u-text-black u-input-9">
+                <input value="" min="0" max="10000" step="1" type="number" placeholder="" id="number-9237" name="height" class="u-border-2 u-border-black u-border-no-left u-border-no-right u-border-no-top u-input u-input-rectangle u-text-black u-input-10">
               </div>
             </div>
-               <br>
-              <div class="u-form-group u-form-number u-form-number-layout-number u-label-top u-form-group-10">
+            <br>
+            <div class="u-form-group u-form-number u-form-number-layout-number u-label-top u-form-group-11">
               <label for="number-6a8d" class="u-label">Bogaz ölçüsü</label>
               <div class="u-input-row" data-value="0">
-                <input value="" min="0" max="100" step="1" type="number" placeholder="" id="number-6a8d" name="neck_size" class="u-border-2 u-border-black u-border-no-left u-border-no-right u-border-no-top u-input u-input-rectangle u-text-black u-input-10">
+                <input value="" min="0" max="10000" step="1" type="number" placeholder="" id="number-6a8d" name="neck_size" class="u-border-2 u-border-black u-border-no-left u-border-no-right u-border-no-top u-input u-input-rectangle u-text-black u-input-11">
               </div>
             </div>
-               <br>
-              <div class="u-form-group u-form-number u-form-number-layout-number u-label-top u-form-group-10">
+            <br>
+            <div class="u-form-group u-form-number u-form-number-layout-number u-label-top u-form-group-11">
               <label for="number-6a8d" class="u-label">Hacim</label>
               <div class="u-input-row" data-value="0">
-                <input value="" min="0" max="100" step="1" type="number" placeholder="" id="number-6ad" name="volume" class="u-border-2 u-border-black u-border-no-left u-border-no-right u-border-no-top u-input u-input-rectangle u-text-black u-input-10">
+                <input value="" min="0" max="10000" step="1" type="number" placeholder="" id="number-6as8d" name="volume" class="u-border-2 u-border-black u-border-no-left u-border-no-right u-border-no-top u-input u-input-rectangle u-text-black u-input-11">
               </div>
             </div>
-
+            <br>
+              <div class="u-form-group  u-form-group-10">
+              <input type="file" name="image">
+               </div>
               <br>
-              <div class="u-align-center u-form-group u-form-submit u-label-top">
+
+            <div class="u-align-center u-form-group u-form-submit u-label-top">
               <a href="#" class="u-border-2 u-border-black u-btn u-btn-rectangle u-btn-submit u-button-style u-none u-btn-1">Submit</a>
               <input type="submit" value="submit" class="u-form-control-hidden">
             </div>
-
-              <div class="u-form-send-message u-form-send-success"> Thank you! Your message has been sent. </div>
+            <div class="u-form-send-message u-form-send-success"> Thank you! Your message has been sent. </div>
             <div class="u-form-send-error u-form-send-message"> Unable to send your message. Please fix errors then try again. </div>
             <input type="hidden" value="" name="recaptchaResponse">
             <input type="hidden" name="formServices" value="cbf0d18d-5456-ae03-71f8-2d943f80830c">
@@ -195,14 +300,7 @@
     
     
     
-    <footer class="u-align-center u-clearfix u-footer u-grey-80 u-footer" id="sec-d9e6"><div class="u-clearfix u-sheet u-sheet-1">
-        <p class="u-small-text u-text u-text-variant u-text-1">BILGER</p>
-        <p class="u-small-text u-text u-text-variant u-text-2">Iletisim </p>
-        <img class="u-image u-image-default u-preserve-proportions u-image-1" src="{% static 'onlineshop/images/gc34476ab4f72df5338bfe340243fc055995f0934459df7878a4cb09ef2c7a18ff81c09c4b55b521ba4bfed0304db55a9_1280.png' %}" alt="" data-image-width="1280" data-image-height="1280">
-        <p class="u-small-text u-text u-text-variant u-text-3">Numune Talebi</p>
-        <p class="u-small-text u-text u-text-variant u-text-4">Calisma Saatleri</p>
-        <p class="u-small-text u-text u-text-variant u-text-5">Iletisim </p>
-      </div></footer>
+    
     <section class="u-backlink u-clearfix u-grey-80">
       <a class="u-link" href="https://nicepage.com/website-templates" target="_blank">
         <span>Website Templates</span>
